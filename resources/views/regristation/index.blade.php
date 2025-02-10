@@ -7,10 +7,10 @@
     <title>Sign Up Form by Colorlib</title>
 
     <!-- Font Icon -->
-    <link rel="stylesheet" href="fonts/material-icon/css/material-design-iconic-font.min.css">
+    <link rel="stylesheet" href="{{ url('colorlib-regform-12/fonts/material-icon/css/material-design-iconic-font.min.css')}}">
 
     <!-- Main css -->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="{{ url('colorlib-regform-12/css/style.css') }}">
 </head>
 <body>
 
@@ -20,16 +20,25 @@
             <form method="POST" class="appointment-form" id="appointment-form">
                 <h2>education appointment form</h2>
                 <div class="form-group-1">
-                    <input type="text" name="title" id="title" placeholder="Title" required />
-                    <input type="text" name="name" id="name" placeholder="Your Name" required />
-                    <input type="email" name="email" id="email" placeholder="Email" required />
-                    <input type="number" name="phone_number" id="phone_number" placeholder="Phone number" required />
-                    <div class="select-list">
-                        <select name="course_type" id="course_type">
-                            <option slected value="">Course Type</option>
-                            <option value="society">Society</option>
-                            <option value="language">Language</option>
-                        </select>
+                <form action="#" method="POST">
+            <div class="form-group">
+                <label for="nama">Nama Lengkap</label>
+                <input type="text" id="nama" name="nama" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="telepon">No. Telepon</label>
+                <input type="tel" id="telepon" name="telepon" required>
+            </div>
+            <div class="form-group">
+                <label for="jenis_kelamin">Jenis Kelamin</label>
+                <select id="jenis_kelamin" name="jenis_kelamin">
+                    <option value="Laki-laki">Laki-laki</option>
+                    <option value="Perempuan">Perempuan</option>
+                </select>
                     </div>
                 </div>
                 <div class="form-group-2">
@@ -60,7 +69,7 @@
     </div>
 
     <!-- JS -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="js/main.js"></script>
+    <script src="{{ url('colorlib-regform-12/vendor/jquery/jquery.min.js')}}"></script>
+    <script src="{{ url('colorlib-regform-12/js/main.js')}}"></script>
 </body><!-- This templates was made by Colorlib (https://colorlib.com) -->
 </html>
