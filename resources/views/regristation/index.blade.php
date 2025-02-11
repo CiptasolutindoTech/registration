@@ -3,83 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Sign Up Form by Colorlib</title>
+    <title>Formulir Pendaftaran Sekata</title>
 
-    <!-- Font Icon -->
-    <link rel="stylesheet" href="{{ url('colorlib-regform-12/fonts/material-icon/css/material-design-iconic-font.min.css')}}">
-
-    <!-- Main css -->
-    <link rel="stylesheet" href="{{ url('colorlib-regform-12/css/style.css') }}">
-    
-    <style>
-        label {
-            font-weight: bold;
-            color: black;
-            display: block;
-            margin-bottom: 5px;
+    <!-- Tailwind CSS & DaisyUI -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {},
+            },
+            plugins: [daisyui]
         }
-    </style>
+    </script>
 </head>
-<body>
-
-    <div class="main">
-        <div class="container">
-            <form method="POST" class="appointment-form" id="appointment-form">
-                <h2>Formulir Pendaftaran Sekata</h2>
-                <div class="form-group-1">
-                    <div class="form-group">
-                        <label for="nama">Nama Lengkap</label> 
-                        <input type="text" id="nama" name="nama" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="jenis_kelamin">Jenis Kelamin</label>
-                        <select id="jenis_kelamin" name="jenis_kelamin">
-                        <option value="" disabled selected>Pilih jenis kelamin</option>
-                            <option value="Laki-laki">Laki-laki</option>
-                            <option value="Perempuan">Perempuan</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label for="alamat">Alamat</label> 
-                        <input type="text" id="alamat" name="alamat" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="perusahaan">Nama Instansi/Perusahaan</label> 
-                        <input type="text" id="perusahaan" name="perusahaan" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Email</label>
-                        <input type="email" id="email" name="email" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="telepon">No Whatsapp</label>
-                        <input type="tel" id="telepon" name="telepon" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="skema">Skema Kompetensi yang dipilih:</label>
-                        <select id="skema" name="skema[]" multiple>
-                            <option value="asisteninstruktur">Asisten Instruktur</option>
-                            <option value="instruktur">Instruktur</option>
-                            <option value="instruktursenior">Instruktur Senior</option>
-                            <option value="mastertrainer">Master Trainer</option>
-                        </select>
-                        <small>Tahan tombol Ctrl (Windows) atau Command (Mac) untuk memilih lebih dari satu.</small>
-                    </div>
+<body class="bg-gray-100 flex justify-center items-center min-h-screen">
+    <div class="card w-full max-w-lg bg-white shadow-lg p-6 rounded-lg">
+        <h2 class="text-2xl font-bold text-center mb-4">Formulir Pendaftaran Sekata</h2>
+        <form method="POST" class="space-y-4">
+            <div>
+                <label for="nama" class="label">Nama Lengkap</label>
+                <input type="text" id="nama" name="nama" class="input input-bordered w-full" required>
+            </div>
+            <div>
+                <label for="jenis_kelamin" class="label">Jenis Kelamin</label>
+                <select id="jenis_kelamin" name="jenis_kelamin" class="select select-bordered w-full" required>
+                    <option value="" disabled selected>Pilih jenis kelamin</option>
+                    <option value="Laki-laki">Laki-laki</option>
+                    <option value="Perempuan">Perempuan</option>
+                </select>
+            </div>
+            <div>
+                <label for="alamat" class="label">Alamat</label>
+                <input type="text" id="alamat" name="alamat" class="input input-bordered w-full" required>
+            </div>
+            <div>
+                <label for="perusahaan" class="label">Nama Instansi/Perusahaan</label>
+                <input type="text" id="perusahaan" name="perusahaan" class="input input-bordered w-full" required>
+            </div>
+            <div>
+                <label for="email" class="label">Email</label>
+                <input type="email" id="email" name="email" class="input input-bordered w-full" required>
+            </div>
+            <div>
+                <label for="telepon" class="label">No Whatsapp</label>
+                <input type="tel" id="telepon" name="telepon" class="input input-bordered w-full" required>
+            </div>
+            <div>
+                <label class="label">Skema Kompetensi yang dipilih:</label>
+                <div class="flex flex-col gap-2">
+                    <label class="cursor-pointer flex items-center gap-2">
+                        <input type="checkbox" class="checkbox" name="skema[]" value="asisteninstruktur"> Asisten Instruktur
+                    </label>
+                    <label class="cursor-pointer flex items-center gap-2">
+                        <input type="checkbox" class="checkbox" name="skema[]" value="instruktur"> Instruktur
+                    </label>
+                    <label class="cursor-pointer flex items-center gap-2">
+                        <input type="checkbox" class="checkbox" name="skema[]" value="instruktursenior"> Instruktur Senior
+                    </label>
+                    <label class="cursor-pointer flex items-center gap-2">
+                        <input type="checkbox" class="checkbox" name="skema[]" value="mastertrainer"> Master Trainer
+                    </label>
                 </div>
-                <div class="form-check">
-                    <input type="checkbox" name="agree-term" id="agree-term" class="agree-term" />
-                    <label for="agree-term" class="label-agree-term"><span><span></span></span>I agree to the  <a href="#" class="term-service">Terms and Conditions</a></label>
-                </div>
-                <div class="form-submit">
-                    <input type="submit" name="submit" id="submit" class="submit" value="Request an appointment" />
-                </div>
-            </form>
-        </div>
+                <small class="text-gray-500">Tahan tombol Ctrl (Windows) atau Command (Mac) untuk memilih lebih dari satu.</small>
+            </div>
+            <div class="form-control">
+                <label class="cursor-pointer flex items-center gap-2">
+                    <input type="checkbox" class="checkbox" name="agree-term" required>
+                    Saya setuju dengan <a href="#" class="text-blue-500 underline">Syarat dan Ketentuan</a>
+                </label>
+            </div>
+            <button type="submit" class="btn btn-primary w-full">Daftar Sekarang</button>
+        </form>
     </div>
-
-    <!-- JS -->
-    <script src="{{ url('colorlib-regform-12/vendor/jquery/jquery.min.js')}}"></script>
-    <script src="{{ url('colorlib-regform-12/js/main.js')}}"></script>
 </body>
 </html>

@@ -1,10 +1,13 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\RegristrationController;
 
 Route::get('/', function () {
     return view('welcome');
 });
 
-//route resource for products
-Route::resource('/regristration', \App\Http\Controllers\RegristrationController::class);
+// Route::resource('/regristration', \App\Http\Controllers\RegristrationController::class);
+Route::prefix('regristration')->name('regristration.')->group(function () {
+    Route::get('/', [RegristrationController::class, 'index'])->name('index');
+});
