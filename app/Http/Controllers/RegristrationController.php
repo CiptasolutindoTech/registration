@@ -51,7 +51,7 @@ class RegristrationController extends Controller
      */
     public function store(Request $request) {
         $request->validate([
-            'name' => 'required|string|',
+            'nama' => 'required|string|min:1',   
             'jenis_kelamin',
             'alamat',
             'perusahaan',
@@ -63,22 +63,22 @@ class RegristrationController extends Controller
             'mastertrainer',
         ]);
 
-        dd($request->all());
+        // dd($request->all());
     
         //create 
         Registration::create([
-            'name'          => $request->name,
-            'jenis_kelamin'        => $request->jenis_kelamin,
-            'alamat'  => $request->alamat,
-            'perusahaan'       => $request->perusahaan,
-            'email'         => $request->email,
-            'telepon' => $request->telepon,
-            'asisteninstruktur'  => $request->asisteninstruktur,
-            'instruktur'  => $request->instruktur,
-            'instruktursenior'  => $request->instruktursenior,
-            'mastertrainer'  => $request->mastertrainer,
-
+            'nama' => $request->input('nama'), // Pastikan ini tidak null
+            'jenis_kelamin' => $request->input('jenis_kelamin', 'Laki-laki'),
+            'alamat' => $request->input('alamat'),
+            'perusahaan' => $request->input('perusahaan'),
+            'email' => $request->input('email'),
+            'telepon' => $request->input('telepon'),
+            'asisteninstruktur' => $request->input('asisteninstruktur'),
+            'instruktur' => $request->input('instruktur'),
+            'instruktursenior' => $request->input('instruktursenior'),
+            'mastertrainer' => $request->input('mastertrainer'),
         ]);
+        
 
         // Simpan data atau logika lainnya
         return redirect()->back()->with('success', 'Registrasi berhasil');

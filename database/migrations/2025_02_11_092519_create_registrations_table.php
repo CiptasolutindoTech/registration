@@ -12,17 +12,18 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('registrations', function (Blueprint $table) {
-        $table->string('nama');
-        $table->string('jenis_kelamin');
-        $table->text('alamat');
-        $table->string('perusahaan');
-        $table->string('email');
-        $table->string('telepon');
-        $table->string('asisteninstruktur');
-        $table->string('instruktur');
-        $table->string('instruktursenior');
-        $table->string('mastertrainer');
-        $table->integer('status');
+        $table->id();
+        $table->string('nama')->nullable();
+        $table->string('jenis_kelamin')->nullable();
+        $table->text('alamat')->nullable();
+        $table->string('perusahaan')->nullable();
+        $table->string('email')->nullable();
+        $table->string('telepon')->nullable();
+        $table->string('asisteninstruktur')->nullable();
+        $table->string('instruktur')->nullable();
+        $table->string('instruktursenior')->nullable();
+        $table->string('mastertrainer')->nullable();
+        $table->integer('status')->default('0');
         $table->timestamps();
         });
     }

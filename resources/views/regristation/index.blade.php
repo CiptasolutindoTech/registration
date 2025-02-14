@@ -19,6 +19,7 @@
         </div>
 
         <form method="POST" action="{{ route('regristration.store') }}" class="space-y-4">
+            @csrf
             <div>
                 <label for="nama" class="label">Nama Lengkap</label>
                 <input type="text" id="nama" name="nama" class="border-b-2 border-gray-300 w-full focus:outline-none focus:border-blue-500" required>
@@ -51,16 +52,16 @@
                 <label class="label">Skema Kompetensi yang dipilih:</label>
                 <div class="flex flex-col gap-2">
                     <label class="cursor-pointer flex items-center gap-2">
-                        <input type="checkbox" class="focus:ring-2 focus:ring-blue-500" name="skema[]" value="asisteninstruktur"> Asisten Instruktur
+                        <input type="checkbox" class="focus:ring-2 focus:ring-blue-500" name="asisteninstruktur" value="asisteninstruktur"> Asisten Instruktur
                     </label>
                     <label class="cursor-pointer flex items-center gap-2">
-                        <input type="checkbox" class="focus:ring-2 focus:ring-blue-500" name="skema[]" value="instruktur"> Instruktur
+                        <input type="checkbox" class="focus:ring-2 focus:ring-blue-500" name="instruktur" value="instruktur"> Instruktur
                     </label>
                     <label class="cursor-pointer flex items-center gap-2">
-                        <input type="checkbox" class="focus:ring-2 focus:ring-blue-500" name="skema[]" value="instruktursenior"> Instruktur Senior
+                        <input type="checkbox" class="focus:ring-2 focus:ring-blue-500" name="instruktursenior" value="instruktursenior"> Instruktur Senior
                     </label>
                     <label class="cursor-pointer flex items-center gap-2">
-                        <input type="checkbox" class="focus:ring-2 focus:ring-blue-500" name="skema[]" value="mastertrainer"> Master Trainer
+                        <input type="checkbox" class="focus:ring-2 focus:ring-blue-500" name="mastertrainer" value="mastertrainer"> Master Trainer
                     </label>
                 </div>
             </div>
