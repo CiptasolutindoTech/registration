@@ -7,7 +7,8 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-// Route::resource('/regristration', \App\Http\Controllers\RegristrationController::class);
+
 Route::prefix('regristration')->name('regristration.')->group(function () {
     Route::get('/', [RegristrationController::class, 'index'])->name('index');
+    Route::post('/store', [RegristrationController::class, 'store'])->name('store');
 });

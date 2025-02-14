@@ -18,7 +18,7 @@
             <h2 class="text-2xl font-bold text-center">Formulir Pendaftaran Sekata</h2>
         </div>
 
-        <form method="POST" class="space-y-4">
+        <form method="POST" action="{{ route('regristration.store') }}" class="space-y-4">
             <div>
                 <label for="nama" class="label">Nama Lengkap</label>
                 <input type="text" id="nama" name="nama" class="border-b-2 border-gray-300 w-full focus:outline-none focus:border-blue-500" required>
