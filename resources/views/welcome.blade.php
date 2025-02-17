@@ -8,7 +8,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <meta name="viewport" content="initial-scale=1, maximum-scale=1">
       <!-- site metas -->
-      <title>zon</title>
+      <title>Sekata Entrepreneur Consulting</title>
       <meta name="keywords" content="">
       <meta name="description" content="">
       <meta name="author" content="">
@@ -46,7 +46,6 @@
                   <div class="full">
                      <div class="center-desk">
                         <div class="logo">
-                           <a href="index.html">Zon</a>
                         </div>
                      </div>
                   </div>
@@ -63,7 +62,7 @@
                      <a href="https://wa.me/6287771107292" target="_blank">
                      <li><i class="fa fa-phone" aria-hidden="true"></i> +62877-7110-7292</li>
                      </a>
-                     <li><a href="mailto:sekataconsulting7292@gmail.com"><i class="fa fa-envelope-o" aria-hidden="true"></i> demo@gmail.com</a></li>
+                     <li><a href="mailto:sekataconsulting7292@gmail.com"><i class="fa fa-envelope-o" aria-hidden="true"></i> sekataconsulting7292@gmail.com</a></li>
                   </ul>
                </div>
             </div>
@@ -77,15 +76,15 @@
             <div class="row d_flex grid">
                <div class="col-md-6">
                   <div class="about_img text_align_center">
-                     <figure><img src="images/about.png" alt="#"/></figure>
+                  <figure>
+                     <img src="image/logo.png" alt="#" width="500" height="auto"/>
+                        </figure>
                   </div>
                </div>
                <div class="col-md-6 order1">
                   <div class="titlepage text_align_left">
-                     <h2>About Zon Coffee</h2>
-                     <p>sing 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors  
-                     </p>
-                     <a class="read_more" href="about.html">Read More</a>
+                     <h2>Sekata Entrepreneur Consulting</h2>
+                     <p>Bertumbuh, Berbuah, Berbagi</p>
                   </div>
                </div>
             </div>
@@ -112,20 +111,13 @@
                                  <div class="row d_flex">
                                     <div class="col-md-5">
                                        <div class="zon_text">
-                                          <h1 data-animation="animated bounceInLeft">
-                                             Sekata Entrepreneur<br>
-                                             Consulting
-                                          </h1>
-                                          <p data-animation="animated bounceInLeft">
-                                             Bertumbuh, Berbuah, Berbagi 
+                                       <h1 data-animation="animated bounceInLeft" style="font-size: 25px;">
+                                       TRAINING CENTER
+                                          <p data-animation="animated bounceInLeft" style="font-size: 15px;">
+                                          Melayani pelatihan-pelatihan untuk mandiri/perorangan, instansi dan perusahaan dalam bentuk in house training maupun workshop/seminardengan materi TOT untuk instruktur KKNI level 3-6, MSDM, Kewirausahaan,IT dan Administrasi perkantoran
                                           </p>
                                           <button class="btn btn-primary  read_more bounceInLeft" data-animation="animated bounceInLeft">Read More</button>
                                           <button class="btn btn-primary  read_more bounceInLeft" data-animation="animated bounceInLeft">Get A Quote</button>
-                                       </div>
-                                    </div>
-                                    <div class="col-md-7">
-                                       <div class="coff_img">
-                                          <figure><img src="image/training.png" alt="#"/></figure>
                                        </div>
                                     </div>
                                  </div>
@@ -137,20 +129,14 @@
                                  <div class="row d_flex">
                                     <div class="col-md-5">
                                        <div class="zon_text">
-                                          <h1 data-animation="animated bounceInLeft">
-                                             Zon<br>
-                                             Coffee
+                                          <h1 data-animation="animated bounceInLeft" style="font-size: 25px;">
+                                             BNSP SERTIFICATION
                                           </h1>
-                                          <p data-animation="animated bounceInLeft">
-                                             There are many variations of passages of Loremalteration in some form, by injected humour, or randomised 
+                                          <p data-animation="animated bounceInLeft"style="font-size: 15px;">
+                                          Melayani sertifikasi kompetensi BNSP sebagai muara dari pelatihan-pelatihan yang diselenggarakan baik untuk perorangan/mandiri, instansimaupun perusahaan
                                           </p>
                                           <button class="btn btn-primary  read_more bounceInLeft" data-animation="animated bounceInLeft">Read More</button>
                                           <button class="btn btn-primary  read_more bounceInLeft" data-animation="animated bounceInLeft">Get A Quote</button>
-                                       </div>
-                                    </div>
-                                    <div class="col-md-7">
-                                       <div class="coff_img">
-                                          <figure><img src="images/coff_img.png" alt="#"/></figure>
                                        </div>
                                     </div>
                                  </div>
@@ -162,20 +148,14 @@
                                  <div class="row d_flex">
                                     <div class="col-md-5">
                                        <div class="zon_text">
-                                          <h1 data-animation="animated bounceInLeft">
-                                             Zon<br>
-                                             Coffee
+                                          <h1 data-animation="animated bounceInLeft" style="font-size: 25px;">
+                                          COACHING DAN PENDAMPINGAN
                                           </h1>
                                           <p data-animation="animated bounceInLeft">
-                                             There are many variations of passages of Loremalteration in some form, by injected humour, or randomised 
+                                          Melayani pendampingan untuk wirausahawan dan UMKM yang barumemulai usaha maupun yang akan meningkatkan dan mengembangkanusahanya, juga coaching untuk perusahaan secara manajemen
                                           </p>
                                           <button class="btn btn-primary  read_more bounceInLeft" data-animation="animated bounceInLeft">Read More</button>
                                           <button class="btn btn-primary  read_more bounceInLeft" data-animation="animated bounceInLeft">Get A Quote</button>
-                                       </div>
-                                    </div>
-                                    <div class="col-md-7">
-                                       <div class="coff_img">
-                                          <figure><img src="images/coff_img.png" alt="#"/></figure>
                                        </div>
                                     </div>
                                  </div>
