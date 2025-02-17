@@ -19,7 +19,7 @@
       <!-- Responsive-->
       <link rel="stylesheet" href="css/responsive.css">
       <!-- fevicon -->
-      <link rel="icon" href="images/fevicon.png" type="image/gif" />
+      <link rel="icon" href="zon-html/images/fevicon.png" type="image/gif" />
       <!-- Scrollbar Custom CSS -->
       <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
       <link rel="stylesheet" href="css/owl.carousel.min.css">
@@ -56,37 +56,14 @@
                      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
                      <span class="navbar-toggler-icon"></span>
                      </button>
-                     <div class="collapse navbar-collapse" id="navbarsExample04">
-                        <ul class="navbar-nav mr-auto">
-                           <li class="nav-item active">
-                              <a class="nav-link" href="index.html">Home</a>
-                           </li>
-                           <li class="nav-item">
-                              <a class="nav-link" href="about.html">About</a>
-                           </li>
-                           <li class="nav-item">
-                              <a class="nav-link" href="service.html">Service</a>
-                           </li>
-                           <li class="nav-item">
-                              <a class="nav-link" href="testimonial.html">Testimonial</a>
-                           </li>
-                           <li class="nav-item">
-                              <a class="nav-link" href="blog.html">Blog</a>
-                           </li>
-                           <li class="nav-item">
-                              <a class="nav-link" href="contact.html">Contact Us</a>
-                           </li>
-                           <li class="nav-item">
-                              <a class="nav-link" style="background: transparent;" href="Javascript:void(0)"><i class="fa fa-search"></i></a>
-                           </li>
-                        </ul>
-                     </div>
                   </nav>
                </div>
                <div class="col-md-4 re_no">
                   <ul class="infomaco">
-                     <li><i class="fa fa-phone" aria-hidden="true"></i> +01 1234567890</li>
-                     <li><a href="Javascript:void(0)"><i class="fa fa-envelope-o" aria-hidden="true"></i> demo@gmail.com</a></li>
+                     <a href="https://wa.me/6287771107292" target="_blank">
+                     <li><i class="fa fa-phone" aria-hidden="true"></i> +62877-7110-7292</li>
+                     </a>
+                     <li><a href="mailto:sekataconsulting7292@gmail.com"><i class="fa fa-envelope-o" aria-hidden="true"></i> demo@gmail.com</a></li>
                   </ul>
                </div>
             </div>
@@ -94,6 +71,27 @@
       </div>
       <!-- end header inner -->
       <!-- end header -->
+      <!-- about -->
+      <div class="about">
+         <div class="container">
+            <div class="row d_flex grid">
+               <div class="col-md-6">
+                  <div class="about_img text_align_center">
+                     <figure><img src="images/about.png" alt="#"/></figure>
+                  </div>
+               </div>
+               <div class="col-md-6 order1">
+                  <div class="titlepage text_align_left">
+                     <h2>About Zon Coffee</h2>
+                     <p>sing 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors  
+                     </p>
+                     <a class="read_more" href="about.html">Read More</a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- end about -->
       <!-- top -->
       <div class="full_bg">
          <div class="slider_main">
@@ -115,11 +113,11 @@
                                     <div class="col-md-5">
                                        <div class="zon_text">
                                           <h1 data-animation="animated bounceInLeft">
-                                             Zon<br>
-                                             Coffee
+                                             Sekata Entrepreneur<br>
+                                             Consulting
                                           </h1>
                                           <p data-animation="animated bounceInLeft">
-                                             There are many variations of passages of Loremalteration in some form, by injected humour, or randomised 
+                                             Bertumbuh, Berbuah, Berbagi 
                                           </p>
                                           <button class="btn btn-primary  read_more bounceInLeft" data-animation="animated bounceInLeft">Read More</button>
                                           <button class="btn btn-primary  read_more bounceInLeft" data-animation="animated bounceInLeft">Get A Quote</button>
@@ -127,7 +125,7 @@
                                     </div>
                                     <div class="col-md-7">
                                        <div class="coff_img">
-                                          <figure><img src="images/coff_img.png" alt="#"/></figure>
+                                          <figure><img src="image/training.png" alt="#"/></figure>
                                        </div>
                                     </div>
                                  </div>
@@ -199,28 +197,6 @@
             </div>
          </div>
       </div>
-      <!-- end banner -->
-      <!-- about -->
-      <div class="about">
-         <div class="container">
-            <div class="row d_flex grid">
-               <div class="col-md-6">
-                  <div class="about_img text_align_center">
-                     <figure><img src="images/about.png" alt="#"/></figure>
-                  </div>
-               </div>
-               <div class="col-md-6 order1">
-                  <div class="titlepage text_align_left">
-                     <h2>About Zon Coffee</h2>
-                     <p>sing 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors  
-                     </p>
-                     <a class="read_more" href="about.html">Read More</a>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </div>
-      <!-- end about -->
       <!-- service -->
       <div class="service">
          <div class="container-fluid">
@@ -438,19 +414,7 @@
                      </form>
                   </div>
                   <div class="col-lg-9 col-md-8">
-                     <div class="row">
-                        <div class="col-md-6">
-                           <div class="infoma text_align_left">
-                              <h3>Menu</h3>
-                              <ul class="menu_bottom">
-                                 <li><a href="index.html">Home</a></li>
-                                 <li><a href="about.html">About </a></li>
-                                 <li><a href="serviec.html">Coffee Serviec</a></li>
-                                 <li><a href="testimonial.html">Testimonial</a></li>
-                                 <li><a href="blog.html">Blog</a></li>
-                                 <li><a href="contact.html">Contact us</a></li>
-                              </ul>
-                           </div>
+                    
                         </div>
                         <div class="col-md-6">
                            <div class="infoma text_align_left">
