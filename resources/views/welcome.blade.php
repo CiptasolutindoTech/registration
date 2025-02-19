@@ -60,7 +60,7 @@
                <div class="col-md-4 re_no">
                   <ul class="infomaco">
                      <a href="https://wa.me/6287771107292" target="_blank">
-                     <li><i class="fa fa-phone" aria-hidden="true"></i> +62877-7110-7292</li>
+                     <li><i class="fa fa-phone" aria-hidden="true"></i>Telp +62877-7110-7292</li>
                      </a>
                      <li><a href="mailto:sekataconsulting7292@gmail.com"><i class="fa fa-envelope-o" aria-hidden="true"></i> sekataconsulting7292@gmail.com</a></li>
                   </ul>
@@ -183,8 +183,8 @@
             <div class="row">
                <div class="col-md-12">
                   <div class="titlepage text_align_center">
-                     <h2>Coffee Services</h2>
-                     <p>sing 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors 
+                     <h2>Galeri Kegiatan</h2>
+                     <p>Selamat datang di Galeri Kegiatan kami! Temukan momen-momen berharga dan kegiatan seru yang telah kami abadikan. Dari seminar, pelatihan, dll. setiap foto menceritakan kisah tentang kebersamaan, kerja keras, dan pencapaian. Jelajahi galeri kami untuk melihat bagaimana kami berkolaborasi, berinovasi, dan berbagi kebahagiaan dalam setiap kegiatan. Mari bergabung dengan kami dan jadilah bagian dari cerita yang menginspirasi!
                      </p>
                   </div>
                </div>
@@ -196,40 +196,37 @@
                      <div class="item">
                         <div class="service_box text_align_center">
                            <div class="ser_img">
-                              <figure><img src="images/ser_img1.png" alt="#"/></figure>
+                              <figure><img src="image/foto1.jpeg" alt="#"/></figure>
                            </div>
-                           <h3>Red Coffee</h3>
-                           <p>Many desktop publishing packages and
-                              web page editors 
+                           <h3></h3>
+                           <p>
                            </p>
                         </div>
                      </div>
                      <div class="item">
                         <div class="service_box text_align_center">
                            <div class="ser_img">
-                              <figure><img src="images/ser_img3.png" alt="#"/></figure>
+                              <figure><img src="image/foto2.jpeg" alt="#"/></figure>
                            </div>
-                           <h3>Black Coffee</h3>
-                           <p>Many desktop publishing packages and
-                              web page editors 
+                           <h3></h3>
+                           <p>
                            </p>
                         </div>
                      </div>
                      <div class="item">
                         <div class="service_box text_align_center">
                            <div class="ser_img">
-                              <figure><img src="images/ser_img2.png" alt="#"/></figure>
+                              <figure><img src="image/foto3.jpeg" alt="#"/></figure>
                            </div>
-                           <h3>Choclate Coffee</h3>
-                           <p>Many desktop publishing packages and
-                              web page editors 
+                           <h3></h3>
+                           <p>
                            </p>
                         </div>
                      </div>
                   </div>
                </div>
                <div class="col-md-12">
-                  <a class="read_more" href="regristration">Book Now Table</a>
+                  <a class="read_more" href="regristration">Daftarkan Disini</a>
                </div>
             </div>
          </div>
@@ -379,17 +376,11 @@
             <div class="container">
                <div class="row">
                   <div class="col-md-12">
-                     <a class="logo_bottom" href="index.html">Zon</a>
+                     <a class="logo_bottom" href="welcome.blade.php">Sekata</a>
                   </div>
                   <div class="col-md-12">
                      <form class="form_subscri">
                         <div class="row">
-                           <div class="col-md-12">
-                              <input class="subsrib" placeholder="Enter your email" type="text" name="Enter your email">
-                           </div>
-                           <div class="col-md-12">
-                              <button class="subsci_btn">Subscribe</button>
-                           </div>
                         </div>
                      </form>
                   </div>
@@ -398,43 +389,32 @@
                         </div>
                         <div class="col-md-6">
                            <div class="infoma text_align_left">
-                              <h3>Coffee</h3>
+                              <h3>Skema kompetensi</h3>
                               <ul class="menu_bottom">
-                                 <li><a href="Javascript:void(0)">Black Coffee</a></li>
-                                 <li><a href="Javascript:void(0)">Read Coffee </a></li>
-                                 <li><a href="Javascript:void(0)">Coffee Serviec</a></li>
-                                 <li><a href="Javascript:void(0)">Green Tea</a></li>
-                                 <li><a href="Javascript:void(0)">Choclate Coffee</a></li>
+                                 <li><a href="Javascript:void(0)">Asisten Instruktur</a></li>
+                                 <li><a href="Javascript:void(0)">Instruktur</a></li>
+                                 <li><a href="Javascript:void(0)">Instruktur Senior</a></li>
+                                 <li><a href="Javascript:void(0)">Master Trainer</a></li>
                               </ul>
                            </div>
                         </div>
                      </div>
                   </div>
                   <div class="col-lg-3 col-md-4">
-                     <div class="infoma">
+                     <div class="infoma text_align_left">
                         <h3>Follow Us</h3>
                         <ul class="social_icon">
-                           <li><a href="Javascript:void(0)"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                           <li><a href="https://www.facebook.com/profile.php?id=100094426865230&mibextid=ZbWKwL"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
                            <li><a href="Javascript:void(0)"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
                            <li><a href="Javascript:void(0)"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-                           <li><a href="Javascript:void(0)"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                           <li><a href="https://www.instagram.com/sekata_consulting"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
                            <li><a href="Javascript:void(0)"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
                         </ul>
                         <ul class="conta">
-                           <li><i class="fa fa-map-marker" aria-hidden="true"></i>Locations 
-                           </li>
-                           <li><i class="fa fa-phone" aria-hidden="true"></i>Call +01 1234567890</li>
-                           <li> <i class="fa fa-envelope" aria-hidden="true"></i><a href="Javascript:void(0)"> demo@gmail.com</a></li>
+                           <li><a href="https://maps.app.goo.gl/BP7S7bYJai81vcon7"><i class="fa fa-map-marker" aria-hidden="true"></i>Lokasi </a></li>
+                           <li><a href="https://wa.me/6287771107292"><i class="fa fa-phone" aria-hidden="true"></i>Telp +62877-7110-7292</a></li>
+                           <li> <i class="fa fa-envelope" aria-hidden="true"></i><a href="sekataconsulting7292@gmail.com"> sekataconsulting7292@gmail.com</a></li>
                         </ul>
-                     </div>
-                  </div>
-               </div>
-            </div>
-            <div class="copyright">
-               <div class="container">
-                  <div class="row">
-                     <div class="col-md-12">
-                        <p>© 2020 All Rights Reserved.  <a href="https://html.design/"> Free html Templates</a></p>
                      </div>
                   </div>
                </div>
