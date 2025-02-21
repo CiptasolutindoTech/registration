@@ -91,8 +91,8 @@
          </div>
       </div>
       <!-- end about -->
-      <!-- top -->
-      <div class="full_bg">
+       <!-- top -->
+       <div class="full_bg">
          <div class="slider_main">
             <div class="container-fluid">
                <div class="row">
@@ -111,13 +111,17 @@
                                  <div class="row d_flex">
                                     <div class="col-md-5">
                                        <div class="zon_text">
-                                       <h1 data-animation="animated bounceInLeft" style="font-size: 25px;">
-                                       TRAINING CENTER
-                                          <p data-animation="animated bounceInLeft" style="font-size: 15px;">
-                                          Melayani pelatihan-pelatihan untuk mandiri/perorangan, instansi dan perusahaan dalam bentuk in house training maupun workshop/seminardengan materi TOT untuk instruktur KKNI level 3-6, MSDM, Kewirausahaan,IT dan Administrasi perkantoran
-                                          </p>
-                                          <button class="btn btn-primary  read_more bounceInLeft" data-animation="animated bounceInLeft">Read More</button>
-                                          <button class="btn btn-primary  read_more bounceInLeft" data-animation="animated bounceInLeft">Get A Quote</button>
+                                          <h1 data-animation="animated bounceInLeft">
+                                             TRAINING CENTER
+                                          </h1>
+                                          <p data-animation="animated bounceInLeft">
+                                             Melayani pelatihan-pelatihan untuk mandiri/perorangan, instansi dan perusahaan dalam bentuk in house training maupun workshop/seminardengan materi TOT untuk instruktur KKNI level 3-6, MSDM, Kewirausahaan,IT dan Administrasi perkantora
+                                          </p>   
+                                       </div>
+                                    </div>
+                                    <div class="col-md-7">
+                                       <div class="coff_img">
+                                          <figure><img src="image/marketing.png" alt="#"/></figure>
                                        </div>
                                     </div>
                                  </div>
@@ -129,14 +133,17 @@
                                  <div class="row d_flex">
                                     <div class="col-md-5">
                                        <div class="zon_text">
-                                          <h1 data-animation="animated bounceInLeft" style="font-size: 25px;">
+                                          <h1 data-animation="animated bounceInLeft">
                                              BNSP SERTIFICATION
                                           </h1>
-                                          <p data-animation="animated bounceInLeft"style="font-size: 15px;">
-                                          Melayani sertifikasi kompetensi BNSP sebagai muara dari pelatihan-pelatihan yang diselenggarakan baik untuk perorangan/mandiri, instansimaupun perusahaan
+                                          <p data-animation="animated bounceInLeft">
+                                             Melayani sertifikasi kompetensi BNSP sebagai muara dari pelatihan-pelatihan yang diselenggarakan baik untuk perorangan/mandiri, instansimaupun perusahaan
                                           </p>
-                                          <button class="btn btn-primary  read_more bounceInLeft" data-animation="animated bounceInLeft">Read More</button>
-                                          <button class="btn btn-primary  read_more bounceInLeft" data-animation="animated bounceInLeft">Get A Quote</button>
+                                       </div>
+                                    </div>
+                                    <div class="col-md-7">
+                                       <div class="coff_img">
+                                          <figure><img src="image/folder.png" alt="#"/></figure>
                                        </div>
                                     </div>
                                  </div>
@@ -148,14 +155,17 @@
                                  <div class="row d_flex">
                                     <div class="col-md-5">
                                        <div class="zon_text">
-                                          <h1 data-animation="animated bounceInLeft" style="font-size: 25px;">
-                                          COACHING DAN PENDAMPINGAN
+                                          <h1 data-animation="animated bounceInLeft">
+                                             COACHING DAN PENDAMPINGAN
                                           </h1>
                                           <p data-animation="animated bounceInLeft">
-                                          Melayani pendampingan untuk wirausahawan dan UMKM yang barumemulai usaha maupun yang akan meningkatkan dan mengembangkanusahanya, juga coaching untuk perusahaan secara manajemen
+                                             Melayani pendampingan untuk wirausahawan dan UMKM yang barumemulai usaha maupun yang akan meningkatkan dan mengembangkanusahanya, juga coaching untuk perusahaan secara manajemen
                                           </p>
-                                          <button class="btn btn-primary  read_more bounceInLeft" data-animation="animated bounceInLeft">Read More</button>
-                                          <button class="btn btn-primary  read_more bounceInLeft" data-animation="animated bounceInLeft">Get A Quote</button>
+                                       </div>
+                                    </div>
+                                    <div class="col-md-7">
+                                       <div class="coff_img">
+                                          <figure><img src="image/kerja.png" alt="#"/></figure>
                                        </div>
                                     </div>
                                  </div>
@@ -177,6 +187,7 @@
             </div>
          </div>
       </div>
+      <!-- end banner -->
       <!-- service -->
       <div class="service">
          <div class="container-fluid">
@@ -184,8 +195,6 @@
                <div class="col-md-12">
                   <div class="titlepage text_align_center">
                      <h2>Galeri Kegiatan</h2>
-                     <p>Selamat datang di Galeri Kegiatan kami! Temukan momen-momen berharga dan kegiatan seru yang telah kami abadikan. Dari seminar, pelatihan, dll. setiap foto menceritakan kisah tentang kebersamaan, kerja keras, dan pencapaian. Jelajahi galeri kami untuk melihat bagaimana kami berkolaborasi, berinovasi, dan berbagi kebahagiaan dalam setiap kegiatan. Mari bergabung dengan kami dan jadilah bagian dari cerita yang menginspirasi!
-                     </p>
                   </div>
                </div>
             </div>
@@ -224,9 +233,6 @@
                         </div>
                      </div>
                   </div>
-               </div>
-               <div class="col-md-12">
-                  <a class="read_more" href="regristration">Daftarkan Disini</a>
                </div>
             </div>
          </div>
