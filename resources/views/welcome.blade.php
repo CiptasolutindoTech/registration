@@ -116,7 +116,7 @@
                                           </h1>
                                           <p data-animation="animated bounceInLeft">
                                              Melayani pelatihan-pelatihan untuk mandiri/perorangan, instansi dan perusahaan dalam bentuk in house training maupun workshop/seminardengan materi TOT untuk instruktur KKNI level 3-6, MSDM, Kewirausahaan,IT dan Administrasi perkantora
-                                          </p>   
+                                          </p>
                                        </div>
                                     </div>
                                     <div class="col-md-7">
@@ -156,7 +156,7 @@
                                     <div class="col-md-5">
                                        <div class="zon_text">
                                           <h1 data-animation="animated bounceInLeft"style="font-size: 2.5rem;">
-                                             COACHING 
+                                             COACHING
                                           </h1>
                                           <p data-animation="animated bounceInLeft">
                                              Melayani pendampingan untuk wirausahawan dan UMKM yang barumemulai usaha maupun yang akan meningkatkan dan mengembangkanusahanya, juga coaching untuk perusahaan secara manajemen
@@ -247,38 +247,38 @@
             <div class="row">
               <!-- contact -->
               <div class="col-lg-6 col-md-12">
-                    <div class="contact">
-                        <div class="row">
-                            <div class="col-md-12">
-                                <div class="titlepage text_align_center">
-                                    <h2>Get In Touch</h2>
-                                </div>
+                <div class="contact">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="titlepage text_align_center">
+                                <h2>Get In Touch</h2>
                             </div>
-                            <div class="col-md-12">
-                                <form id="whatsappForm" class="main_form" onsubmit="sendWhatsApp(event)">
-                                    <div class="row">
-                                        <div class="col-md-12">
-                                            <input id="name" class="contactus" placeholder="Your name" type="text" name="name">
-                                        </div>
-                                        <div class="col-md-12">
-                                            <input id="phone" class="contactus" placeholder="Phone Number" type="text" name="phone">
-                                        </div>
-                                        <div class="col-md-12">
-                                            <input id="email" class="contactus" placeholder="Email" type="email" name="email">
-                                        </div>
-                                        <div class="col-md-12">
-                                            <textarea id="message" class="textarea" placeholder="Message" name="message"></textarea>
-                                        </div>
-                                        <div class="col-md-12">
-                                            <button type="submit" class="send_btn">Send via WhatsApp</button>
-                                        </div>
+                        </div>
+                        <div class="col-md-12">
+                            <form id="whatsappForm" class="main_form" onsubmit="sendWhatsApp(event)">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <input id="name" class="contactus" placeholder="Your name" type="text" name="name">
                                     </div>
-                                </form>
-                            </div>
+                                    <div class="col-md-12">
+                                        <input id="phone" class="contactus" placeholder="Phone Number" type="text" name="phone">
+                                    </div>
+                                    <div class="col-md-12">
+                                        <input id="email" class="contactus" placeholder="Email" type="email" name="email">
+                                    </div>
+                                    <div class="col-md-12">
+                                        <textarea id="message" class="textarea" placeholder="Message" name="message"></textarea>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <button type="submit" class="send_btn">Send via WhatsApp</button>
+                                    </div>
+                                </div>
+                            </form>
                         </div>
                     </div>
                 </div>
-               <!-- contact -->
+            </div>
+           <!-- contact -->
                <!-- testimonial section -->
                <div class="col-lg-6 col-md-12">
                   <div class="testimonial">
@@ -394,7 +394,7 @@
                      </form>
                   </div>
                   <div class="col-lg-9 col-md-8">
-                    
+
                         </div>
                         <div class="col-md-6">
                            <div class="infoma text_align_left">
@@ -440,5 +440,22 @@
       <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script>
       <script src="js/owl.carousel.min.js"></script>
       <script src="js/custom.js"></script>
+      <script>
+        function sendWhatsApp(event) {
+            event.preventDefault();
+
+            var phoneNumber = "6281234567890"; // Ganti dengan nomor WhatsApp tujuan
+            var name = document.getElementById("name").value;
+            var phone = document.getElementById("phone").value;
+            var email = document.getElementById("email").value;
+            var message = document.getElementById("message").value;
+
+            var text = `Halo, saya ${name}.\nNomor HP: ${phone}\nEmail: ${email}\nPesan: ${message}`;
+
+            var whatsappURL = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(text)}`;
+
+            window.open(whatsappURL, "_blank");
+        }
+    </script>
    </body>
 </html>
