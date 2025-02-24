@@ -111,7 +111,7 @@
                                  <div class="row d_flex">
                                     <div class="col-md-5">
                                        <div class="zon_text">
-                                          <h1 data-animation="animated bounceInLeft">
+                                          <h1 data-animation="animated bounceInLeft"style="font-size: 2.5rem;">
                                              TRAINING CENTER
                                           </h1>
                                           <p data-animation="animated bounceInLeft">
@@ -133,7 +133,7 @@
                                  <div class="row d_flex">
                                     <div class="col-md-5">
                                        <div class="zon_text">
-                                          <h1 data-animation="animated bounceInLeft">
+                                          <h1 data-animation="animated bounceInLeft"style="font-size: 2.5rem;">
                                              BNSP SERTIFICATION
                                           </h1>
                                           <p data-animation="animated bounceInLeft">
@@ -143,7 +143,7 @@
                                     </div>
                                     <div class="col-md-7">
                                        <div class="coff_img">
-                                          <figure><img src="image/folder.png" alt="#"/></figure>
+                                          <figure><img src="image/folder_.png" alt="#"/></figure>
                                        </div>
                                     </div>
                                  </div>
@@ -155,8 +155,8 @@
                                  <div class="row d_flex">
                                     <div class="col-md-5">
                                        <div class="zon_text">
-                                          <h1 data-animation="animated bounceInLeft">
-                                             COACHING DAN PENDAMPINGAN
+                                          <h1 data-animation="animated bounceInLeft"style="font-size: 2.5rem;">
+                                             COACHING 
                                           </h1>
                                           <p data-animation="animated bounceInLeft">
                                              Melayani pendampingan untuk wirausahawan dan UMKM yang barumemulai usaha maupun yang akan meningkatkan dan mengembangkanusahanya, juga coaching untuk perusahaan secara manajemen
@@ -234,6 +234,9 @@
                      </div>
                   </div>
                </div>
+               <div class="col-md-12">
+                  <a class="read_more" href="regristration">Daftarkan Disini</a>
+               </div>
             </div>
          </div>
       </div>
@@ -242,39 +245,39 @@
       <div class="section blue_bg">
          <div class="container-fluid">
             <div class="row">
-               <!-- contact -->
-               <div class="col-lg-6 col-md-12">
-                  <div class="contact">
-                     <div class="row ">
-                        <div class="col-md-12">
-                           <div class="titlepage text_align_center">
-                              <h2>Get In Touch</h2>
-                           </div>
+              <!-- contact -->
+              <div class="col-lg-6 col-md-12">
+                    <div class="contact">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="titlepage text_align_center">
+                                    <h2>Get In Touch</h2>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <form id="whatsappForm" class="main_form" onsubmit="sendWhatsApp(event)">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <input id="name" class="contactus" placeholder="Your name" type="text" name="name">
+                                        </div>
+                                        <div class="col-md-12">
+                                            <input id="phone" class="contactus" placeholder="Phone Number" type="text" name="phone">
+                                        </div>
+                                        <div class="col-md-12">
+                                            <input id="email" class="contactus" placeholder="Email" type="email" name="email">
+                                        </div>
+                                        <div class="col-md-12">
+                                            <textarea id="message" class="textarea" placeholder="Message" name="message"></textarea>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <button type="submit" class="send_btn">Send via WhatsApp</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
                         </div>
-                        <div class="col-md-12">
-                           <form id="request" class="main_form">
-                              <div class="row">
-                                 <div class="col-md-12 ">
-                                    <input class="contactus" placeholder="Your name" type="type" name=" Name"> 
-                                 </div>
-                                 <div class="col-md-12">
-                                    <input class="contactus" placeholder="Phone Number" type="type" name="Phone Number">                          
-                                 </div>
-                                 <div class="col-md-12">
-                                    <input class="contactus" placeholder="Email" type="type" name="Email">                          
-                                 </div>
-                                 <div class="col-md-12">
-                                    <textarea class="textarea" placeholder="Message" type="type" Message="Name"></textarea>
-                                 </div>
-                                 <div class="col-md-12">
-                                    <button class="send_btn">Send</button>
-                                 </div>
-                              </div>
-                           </form>
-                        </div>
-                     </div>
-                  </div>
-               </div>
+                    </div>
+                </div>
                <!-- contact -->
                <!-- testimonial section -->
                <div class="col-lg-6 col-md-12">

@@ -14,8 +14,8 @@
         display: none;
     }
     .zon_text h1 {
-        font-size: 86px;
-        line-height: 90px;
+        font-size: 50px;
+        line-height: 85px;
     }
     .zon_text .read_more {
         max-width: 173px;
@@ -209,7 +209,7 @@
         top: 88% !important;
     }
     .titlepage h2 {
-        font-size: 27px;
+        font-size: 25px;
         line-height: 30px
     }
     .about {
