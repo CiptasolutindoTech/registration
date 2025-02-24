@@ -234,13 +234,45 @@
                      </div>
                   </div>
                </div>
+            </div>
+         </div>
+      </div>
+      <!-- end service -->
+       <!-- galeri -->
+      <div class="service">
+         <div class="container-fluid">
+            <div class="row">
+               <div class="col-md-12">
+                  <div class="titlepage text_align_center">
+                     <h2>Galeri Kegiatan</h2>
+                  </div>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-md-12">
+                  <!--  Demos -->
+                     <div class="item">
+                        <div class="service_box text_align_center">
+                           <div class="ser_img">
+                              <figure><img src="image/foto1.jpeg" alt="#"/></figure>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="item">
+                        <div class="service_box text_align_center">
+                           <div class="ser_img">
+                              <figure><img src="image/foto2.jpeg" alt="#"/></figure>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
                <div class="col-md-12">
                   <a class="read_more" href="regristration">Daftarkan Disini</a>
                </div>
             </div>
          </div>
       </div>
-      <!-- end service -->
+      <!-- end galeri -->
       <!-- section blue_bg -->
       <div class="section blue_bg">
          <div class="container-fluid">
@@ -251,7 +283,7 @@
                     <div class="row">
                         <div class="col-md-12">
                             <div class="titlepage text_align_center">
-                                <h2>Get In Touch</h2>
+                                <h2>Hubungi Kami</h2>
                             </div>
                         </div>
                         <div class="col-md-12">
