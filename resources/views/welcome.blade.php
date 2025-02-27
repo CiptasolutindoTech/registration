@@ -205,7 +205,7 @@
                      <div class="item">
                         <div class="service_box text_align_center">
                            <div class="ser_img">
-                              <figure><img src="image/foto1.jpeg" alt="#"/></figure>
+                              <figure><img src="image/tot.jpg" alt="#"/></figure>
                            </div>
                            <h3></h3>
                            <p>
@@ -215,7 +215,7 @@
                      <div class="item">
                         <div class="service_box text_align_center">
                            <div class="ser_img">
-                              <figure><img src="image/foto2.jpeg" alt="#"/></figure>
+                              <figure><img src="image/msdm.jpg" alt="#"/></figure>
                            </div>
                            <h3></h3>
                            <p>
@@ -225,7 +225,17 @@
                      <div class="item">
                         <div class="service_box text_align_center">
                            <div class="ser_img">
-                              <figure><img src="image/foto3.jpeg" alt="#"/></figure>
+                              <figure><img src="image/info.jpg" alt="#"/></figure>
+                           </div>
+                           <h3></h3>
+                           <p>
+                           </p>
+                        </div>
+                     </div>
+                     <div class="item">
+                        <div class="service_box text_align_center">
+                           <div class="ser_img">
+                              <figure><img src="image/kewi.jpg" alt="#"/></figure>
                            </div>
                            <h3></h3>
                            <p>
@@ -234,13 +244,38 @@
                      </div>
                   </div>
                </div>
+            </div>
+         </div>
+      </div>
+      <!-- end service -->
+       <!-- galeri -->
+      <div class="service">
+         <div class="container-fluid">
+            <div class="row">
+               <div class="col-md-12">
+                  <div class="titlepage text_align_center">
+                     <h2>Galeri Kegiatan</h2>
+                  </div>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-md-12">
+                  <!--  Demos -->
+                     <div class="item">
+                        <div class="service_box text_align_center">
+                           <div class="ser_img">
+                              <figure><img src="image/poster.jpg" alt="#"/></figure>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
                <div class="col-md-12">
                   <a class="read_more" href="regristration">Daftarkan Disini</a>
                </div>
             </div>
          </div>
       </div>
-      <!-- end service -->
+      <!-- end galeri -->
       <!-- section blue_bg -->
       <div class="section blue_bg">
          <div class="container-fluid">
@@ -251,7 +286,7 @@
                     <div class="row">
                         <div class="col-md-12">
                             <div class="titlepage text_align_center">
-                                <h2>Get In Touch</h2>
+                                <h2>Hubungi Kami</h2>
                             </div>
                         </div>
                         <div class="col-md-12">
@@ -457,5 +492,49 @@
             window.open(whatsappURL, "_blank");
         }
     </script>
+    <style>
+    .owl-nav button {
+        font-size: 2rem !important; /* Adjust size as needed */
+        width: 50px !important; /* Adjust width as needed */
+        height: 50px !important; /* Adjust height as needed */
+        line-height: 50px !important; /* Center vertically */
+        border-radius: 5px !important; /* Optional: Add rounded corners */
+        background-color: rgb(252, 249, 249) !important; /* Optional: Add a semi-transparent background */
+        color: white !important; /* Optional: Change color */
+        margin: 0 10px !important; /* Optional: Add some margin */
+    }
+
+    .owl-nav button:hover {
+        background-color: rgba(247, 10, 10, 0.96) !important; /* Optional: Change background on hover */
+        color: lightgray !important;
+    }
+
+    .owl-prev span, .owl-next span { /* Target the span inside the button */
+        display: block; /* Make the span take up the full button space */
+    }
+
+    /* Hide the default Owl Carousel navigation text (prev/next) */
+    .owl-prev span, .owl-next span {
+        display: none;
+    }
+
+    /* Use a background image for the arrows */
+    .owl-prev {
+      background-image: url("path/to/prev_arrow.png"); /* Replace with your prev arrow image path */
+      background-size: contain; /* or cover, depending on your image */
+      background-repeat: no-repeat;
+      background-position: center;
+      padding: 0; /* Remove default padding */
+    }
+    .owl-next {
+        background-image: url("path/to/next_arrow.png"); /* Replace with your next arrow image path */
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        padding: 0;
+    }
+
+
+</style>
    </body>
 </html>
