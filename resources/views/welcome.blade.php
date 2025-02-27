@@ -268,13 +268,6 @@
                            </div>
                         </div>
                      </div>
-                     <div class="item">
-                        <div class="service_box text_align_center">
-                           <div class="ser_img">
-                              <figure><img src="image/foto2.jpeg" alt="#"/></figure>
-                           </div>
-                        </div>
-                     </div>
                   </div>
                <div class="col-md-12">
                   <a class="read_more" href="regristration">Daftarkan Disini</a>
