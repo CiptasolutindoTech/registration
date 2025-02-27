@@ -1,119 +1,547 @@
-<?php
-session_start();
-?>
-
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    <title>Login</title>
+   <head>
+      <!-- basic -->
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <!-- mobile metas -->
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+      <!-- site metas -->
+      <title>Sekata Entrepreneur Consulting</title>
+      <meta name="keywords" content="">
+      <meta name="description" content="">
+      <meta name="author" content="">
+      <!-- bootstrap css -->
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+      <!-- style css -->
+      <link rel="stylesheet" href="css/style.css">
+      <!-- Responsive-->
+      <link rel="stylesheet" href="css/responsive.css">
+      <!-- fevicon -->
+      <link rel="icon" href="zon-html/images/fevicon.png" type="image/gif" />
+      <!-- Scrollbar Custom CSS -->
+      <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+      <link rel="stylesheet" href="css/owl.carousel.min.css">
+      <!-- Tweaks for older IEs-->
+      <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+      <link rel="stylesheet" href="https://rawgit.com/LeshikJanz/libraries/master/Bootstrap/baguetteBox.min.css">
+      <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+   </head>
+   <!-- body -->
+   <body class="main-layout">
+      <!-- loader  -->
+      <div class="loader_bg">
+         <div class="loader"><img src="images/loading.gif" alt="#"/></div>
+      </div>
+      <!-- end loader -->
+      <!-- header -->
+      <div class="header">
+         <div class="container-fluid">
+            <div class="row d_flex">
+               <div class="col-xl-1 col-lg-3 col-sm-2 col logo_section">
+                  <div class="full">
+                     <div class="center-desk">
+                        <div class="logo">
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-xl-7 col-lg-9 col-md-10 col-sm-12">
+                  <nav class="navigation navbar navbar-expand-md navbar-dark ">
+                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
+                     <span class="navbar-toggler-icon"></span>
+                     </button>
+                  </nav>
+               </div>
+               <div class="col-md-4 re_no">
+                  <ul class="infomaco">
+                     <a href="https://wa.me/6287771107292" target="_blank">
+                     <li><i class="fa fa-phone" aria-hidden="true"></i>Telp +62877-7110-7292</li>
+                     </a>
+                     <li><a href="mailto:sekataconsulting7292@gmail.com"><i class="fa fa-envelope-o" aria-hidden="true"></i> sekataconsulting7292@gmail.com</a></li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- end header inner -->
+      <!-- end header -->
+      <!-- about -->
+      <div class="about">
+         <div class="container">
+            <div class="row d_flex grid">
+               <div class="col-md-6">
+                  <div class="about_img text_align_center">
+                  <figure>
+                     <img src="image/logo.png" alt="#" width="500" height="auto"/>
+                        </figure>
+                  </div>
+               </div>
+               <div class="col-md-6 order1">
+                  <div class="titlepage text_align_left">
+                     <h2>Sekata Entrepreneur Consulting</h2>
+                     <p>Bertumbuh, Berbuah, Berbagi</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- end about -->
+       <!-- top -->
+       <div class="full_bg">
+         <div class="slider_main">
+            <div class="container-fluid">
+               <div class="row">
+                  <div class="col-md-12">
+                     <!-- carousel code -->
+                     <div id="carouselExampleIndicators" class="carousel slide">
+                        <ol class="carousel-indicators">
+                           <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                           <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                           <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                           <!-- first slide -->
+                           <div class="carousel-item active">
+                              <div class="carousel-caption relative">
+                                 <div class="row d_flex">
+                                    <div class="col-md-5">
+                                       <div class="zon_text">
+                                          <h1 data-animation="animated bounceInLeft"style="font-size: 2.5rem;">
+                                             TRAINING CENTER
+                                          </h1>
+                                          <p data-animation="animated bounceInLeft">
+                                             Melayani pelatihan-pelatihan untuk mandiri/perorangan, instansi dan perusahaan dalam bentuk in house training maupun workshop/seminardengan materi TOT untuk instruktur KKNI level 3-6, MSDM, Kewirausahaan,IT dan Administrasi perkantora
+                                          </p>
+                                       </div>
+                                    </div>
+                                    <div class="col-md-7">
+                                       <div class="coff_img">
+                                          <figure><img src="image/marketing.png" alt="#"/></figure>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <!-- second slide -->
+                           <div class="carousel-item">
+                              <div class="carousel-caption relative">
+                                 <div class="row d_flex">
+                                    <div class="col-md-5">
+                                       <div class="zon_text">
+                                          <h1 data-animation="animated bounceInLeft"style="font-size: 2.5rem;">
+                                             BNSP SERTIFICATION
+                                          </h1>
+                                          <p data-animation="animated bounceInLeft">
+                                             Melayani sertifikasi kompetensi BNSP sebagai muara dari pelatihan-pelatihan yang diselenggarakan baik untuk perorangan/mandiri, instansimaupun perusahaan
+                                          </p>
+                                       </div>
+                                    </div>
+                                    <div class="col-md-7">
+                                       <div class="coff_img">
+                                          <figure><img src="image/folder_.png" alt="#"/></figure>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <!-- third slide-->
+                           <div class="carousel-item">
+                              <div class="carousel-caption relative">
+                                 <div class="row d_flex">
+                                    <div class="col-md-5">
+                                       <div class="zon_text">
+                                          <h1 data-animation="animated bounceInLeft"style="font-size: 2.5rem;">
+                                             COACHING
+                                          </h1>
+                                          <p data-animation="animated bounceInLeft">
+                                             Melayani pendampingan untuk wirausahawan dan UMKM yang barumemulai usaha maupun yang akan meningkatkan dan mengembangkanusahanya, juga coaching untuk perusahaan secara manajemen
+                                          </p>
+                                       </div>
+                                    </div>
+                                    <div class="col-md-7">
+                                       <div class="coff_img">
+                                          <figure><img src="image/kerja.png" alt="#"/></figure>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <!-- controls -->
+                        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                        <i class="fa fa-angle-left" aria-hidden="true"></i>
+                        <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                        <i class="fa fa-angle-right" aria-hidden="true"></i>
+                        <span class="sr-only">Next</span>
+                        </a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- end banner -->
+      <!-- service -->
+      <div class="service">
+         <div class="container-fluid">
+            <div class="row">
+               <div class="col-md-12">
+                  <div class="titlepage text_align_center">
+                     <h2>Galeri Kegiatan</h2>
+                  </div>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-md-12">
+                  <!--  Demos -->
+                  <div class="owl-carousel owl-theme">
+                     <div class="item">
+                        <div class="service_box text_align_center">
+                           <div class="ser_img">
+                              <figure><img src="image/tot.jpg" alt="#"/></figure>
+                           </div>
+                           <h3></h3>
+                           <p>
+                           </p>
+                        </div>
+                     </div>
+                     <div class="item">
+                        <div class="service_box text_align_center">
+                           <div class="ser_img">
+                              <figure><img src="image/msdm.jpg" alt="#"/></figure>
+                           </div>
+                           <h3></h3>
+                           <p>
+                           </p>
+                        </div>
+                     </div>
+                     <div class="item">
+                        <div class="service_box text_align_center">
+                           <div class="ser_img">
+                              <figure><img src="image/info.jpg" alt="#"/></figure>
+                           </div>
+                           <h3></h3>
+                           <p>
+                           </p>
+                        </div>
+                     </div>
+                     <div class="item">
+                        <div class="service_box text_align_center">
+                           <div class="ser_img">
+                              <figure><img src="image/kewi.jpg" alt="#"/></figure>
+                           </div>
+                           <h3></h3>
+                           <p>
+                           </p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- end service -->
+       <!-- galeri -->
+      <div class="service">
+         <div class="container-fluid">
+            <div class="row">
+               <div class="col-md-12">
+                  <div class="titlepage text_align_center">
+                     <h2>Galeri Kegiatan</h2>
+                  </div>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-md-12">
+                  <!--  Demos -->
+                     <div class="item">
+                        <div class="service_box text_align_center">
+                           <div class="ser_img">
+                              <figure><img src="image/poster.jpg" alt="#"/></figure>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="item">
+                        <div class="service_box text_align_center">
+                           <div class="ser_img">
+                              <figure><img src="image/foto2.jpeg" alt="#"/></figure>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               <div class="col-md-12">
+                  <a class="read_more" href="regristration">Daftarkan Disini</a>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- end galeri -->
+      <!-- section blue_bg -->
+      <div class="section blue_bg">
+         <div class="container-fluid">
+            <div class="row">
+              <!-- contact -->
+              <div class="col-lg-6 col-md-12">
+                <div class="contact">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="titlepage text_align_center">
+                                <h2>Hubungi Kami</h2>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <form id="whatsappForm" class="main_form" onsubmit="sendWhatsApp(event)">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <input id="name" class="contactus" placeholder="Your name" type="text" name="name">
+                                    </div>
+                                    <div class="col-md-12">
+                                        <input id="phone" class="contactus" placeholder="Phone Number" type="text" name="phone">
+                                    </div>
+                                    <div class="col-md-12">
+                                        <input id="email" class="contactus" placeholder="Email" type="email" name="email">
+                                    </div>
+                                    <div class="col-md-12">
+                                        <textarea id="message" class="textarea" placeholder="Message" name="message"></textarea>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <button type="submit" class="send_btn">Send via WhatsApp</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+           <!-- contact -->
+               <!-- testimonial section -->
+               <div class="col-lg-6 col-md-12">
+                  <div class="testimonial">
+                     <div class="row">
+                        <div class="col-md-12">
+                           <div class="titlepage text_align_left">
+                              <h2>Testimonial</h2>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="row">
+                        <div class="col-md-12">
+                           <div id="myCarousel" class="carousel slide testimonial_Carousel " data-ride="carousel">
+                              <ol class="carousel-indicators">
+                                 <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                                 <li data-target="#myCarousel" data-slide-to="1"></li>
+                                 <li data-target="#myCarousel" data-slide-to="2"></li>
+                              </ol>
+                              <div class="carousel-inner">
+                                 <div class="carousel-item active">
+                                    <div class="container">
+                                       <div class="carousel-caption ">
+                                          <div class="row">
+                                             <div class="col-md-12">
+                                                <div class="testimonial_box text_align_left">
+                                                   <p>uffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going touffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going touffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to</p>
+                                                </div>
+                                             </div>
+                                             <div class="col-md-12">
+                                                <div class="testimonial_pro">
+                                                   <figure><img src="images/test_pro.jpg" alt="#"/></figure>
+                                                   <h3>Mark Jonson <br><span class="cust">Customre</span></h3>
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="carousel-item">
+                                    <div class="container">
+                                       <div class="carousel-caption">
+                                          <div class="row">
+                                             <div class="col-md-12">
+                                                <div class="testimonial_box text_align_left">
+                                                   <p>uffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going touffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going touffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to</p>
+                                                </div>
+                                             </div>
+                                             <div class="col-md-12">
+                                                <div class="testimonial_pro">
+                                                   <figure><img src="images/test_pro.jpg" alt="#"/></figure>
+                                                   <h3>Mark Jonson <br><span class="cust">Customre</span></h3>
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="carousel-item">
+                                    <div class="container">
+                                       <div class="carousel-caption">
+                                          <div class="row">
+                                             <div class="col-md-12">
+                                                <div class="testimonial_box text_align_left">
+                                                   <p>uffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going touffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going touffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to</p>
+                                                </div>
+                                             </div>
+                                             <div class="col-md-12">
+                                                <div class="testimonial_pro">
+                                                   <figure><img src="images/test_pro.jpg" alt="#"/></figure>
+                                                   <h3>Mark Jonson <br><span class="cust">Customre</span></h3>
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+                              <i class="fa fa-angle-left" aria-hidden="true"></i>
+                              <span class="sr-only">Previous</span>
+                              </a>
+                              <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+                              <i class="fa fa-angle-right" aria-hidden="true"></i>
+                              <span class="sr-only">Next</span>
+                              </a>
+                           </div>
+                        </div>
+                        <div class="col-md-12">
+                           <div class="coff">
+                              <figure><img src="images/coff.png" alt="#"/></figure>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <!-- end testimonial section -->
+            </div>
+         </div>
+      </div>
+      <!-- end section blue_bg -->
+      <!--  footer -->
+      <footer>
+         <div class="footer">
+            <div class="container">
+               <div class="row">
+                  <div class="col-md-12">
+                     <a class="logo_bottom" href="welcome.blade.php">Sekata</a>
+                  </div>
+                  <div class="col-md-12">
+                     <form class="form_subscri">
+                        <div class="row">
+                        </div>
+                     </form>
+                  </div>
+                  <div class="col-lg-9 col-md-8">
+
+                        </div>
+                        <div class="col-md-6">
+                           <div class="infoma text_align_left">
+                              <h3>Skema kompetensi</h3>
+                              <ul class="menu_bottom">
+                                 <li><a href="Javascript:void(0)">Asisten Instruktur</a></li>
+                                 <li><a href="Javascript:void(0)">Instruktur</a></li>
+                                 <li><a href="Javascript:void(0)">Instruktur Senior</a></li>
+                                 <li><a href="Javascript:void(0)">Master Trainer</a></li>
+                              </ul>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-lg-3 col-md-4">
+                     <div class="infoma text_align_left">
+                        <h3>Follow Us</h3>
+                        <ul class="social_icon">
+                           <li><a href="https://www.facebook.com/profile.php?id=100094426865230&mibextid=ZbWKwL"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                           <li><a href="Javascript:void(0)"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                           <li><a href="Javascript:void(0)"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                           <li><a href="https://www.instagram.com/sekata_consulting"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                           <li><a href="Javascript:void(0)"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+                        </ul>
+                        <ul class="conta">
+                           <li><a href="https://maps.app.goo.gl/BP7S7bYJai81vcon7"><i class="fa fa-map-marker" aria-hidden="true"></i>Lokasi </a></li>
+                           <li><a href="https://wa.me/6287771107292"><i class="fa fa-phone" aria-hidden="true"></i>Telp +62877-7110-7292</a></li>
+                           <li> <i class="fa fa-envelope" aria-hidden="true"></i><a href="sekataconsulting7292@gmail.com"> sekataconsulting7292@gmail.com</a></li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </footer>
+      <!-- end footer -->
+      <!-- Javascript files-->
+      <script src="js/jquery.min.js"></script>
+      <script src="js/bootstrap.bundle.min.js"></script>
+      <script src="js/jquery-3.0.0.min.js"></script>
+      <!-- sidebar -->
+      <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script>
+      <script src="js/owl.carousel.min.js"></script>
+      <script src="js/custom.js"></script>
+      <script>
+        function sendWhatsApp(event) {
+            event.preventDefault();
+
+            var phoneNumber = "6281234567890"; // Ganti dengan nomor WhatsApp tujuan
+            var name = document.getElementById("name").value;
+            var phone = document.getElementById("phone").value;
+            var email = document.getElementById("email").value;
+            var message = document.getElementById("message").value;
+
+            var text = `Halo, saya ${name}.\nNomor HP: ${phone}\nEmail: ${email}\nPesan: ${message}`;
+
+            var whatsappURL = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(text)}`;
+
+            window.open(whatsappURL, "_blank");
+        }
+    </script>
     <style>
-        body {
-            background-image: url(image/bg.jpg);
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-            font-family: Arial, sans-serif;
-        }
-        .login-container {
-            background-color: #fff;
-            border-radius: 10px;
-            padding: 20px;
-            display: flex;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-            width: 800px;
-            max-width: 100%;
-        }
-        .login-form {
-            flex: 1;
-            padding: 20px;
-        }
-        .login-form h2 {
-            margin-bottom: 20px;
-            text-align: center;
-        }
-        .login-form p {
-            text-align: center;
-            margin-bottom: 20px;
-            font-weight: bold;
-        }
-        .login-form label {
-            display: block;
-            margin-bottom: 5px;
-        }
-        .login-form input[type="text"], .login-form input[type="password"] {
-            width: calc(100% - 20px);
-            padding: 10px;
-            margin-bottom: 20px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-        }
-        .login-form button {
-            width: 100%;
-            padding: 10px;
-            background-color: #FFA500; /* Button orange */
-            border: none;
-            border-radius: 5px;
-            color: white;
-            font-size: 16px;
-            cursor: pointer;
-        }
-        .login-form a {
-            display: block;
-            text-align: center;
-            margin-top: 10px;
-            color: #0000EE; /* Link color */
-            text-decoration: none;
-        }
-        .login-form a:hover {
-            text-decoration: underline;
-        }
-        .login-image {
-            flex: 1;
-            padding: 20px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        .login-image img {
-            max-width: 100%;
-            border-radius: 10px;
-        }
-    </style>
-</head>
-<body>
-    <div class="login-container">
-        <div class="login-form">
-            <h2>LOGIN</h2>
-            <p>Sekata Entrepreneur Consulting</p>
-            <?php
-          if (isset($_GET['status']) && $_GET['status'] == 'gagal') {
-              echo '<div class="alert alert-danger" role="alert">Username atau password salah!</div>';
-          }
-        ?>
-            <form action= "proses_login.php" method="post">
-        <div>
-            <label for="username">Username:</label>
-            <input type="text" id="username" name="username" required>
-        </div>
-        <div>
-            <label for="password">Password:</label>
-            <input type="password" id="password" name="password" required>
-        </div>
-        <div>
-            <button type="submit" value="login" name="login" >Login</button>
-        </div>
-    </form>
-        </div>
-        <div class="login-image">
-            <img src="image/logo.png" alt="Makanan">
-        </div>
-    </div>
-    
-</body>
+    .owl-nav button {
+        font-size: 2rem !important; /* Adjust size as needed */
+        width: 50px !important; /* Adjust width as needed */
+        height: 50px !important; /* Adjust height as needed */
+        line-height: 50px !important; /* Center vertically */
+        border-radius: 5px !important; /* Optional: Add rounded corners */
+        background-color: rgb(252, 249, 249) !important; /* Optional: Add a semi-transparent background */
+        color: white !important; /* Optional: Change color */
+        margin: 0 10px !important; /* Optional: Add some margin */
+    }
+
+    .owl-nav button:hover {
+        background-color: rgba(247, 10, 10, 0.96) !important; /* Optional: Change background on hover */
+        color: lightgray !important;
+    }
+
+    .owl-prev span, .owl-next span { /* Target the span inside the button */
+        display: block; /* Make the span take up the full button space */
+    }
+
+    /* Hide the default Owl Carousel navigation text (prev/next) */
+    .owl-prev span, .owl-next span {
+        display: none;
+    }
+
+    /* Use a background image for the arrows */
+    .owl-prev {
+      background-image: url("path/to/prev_arrow.png"); /* Replace with your prev arrow image path */
+      background-size: contain; /* or cover, depending on your image */
+      background-repeat: no-repeat;
+      background-position: center;
+      padding: 0; /* Remove default padding */
+    }
+    .owl-next {
+        background-image: url("path/to/next_arrow.png"); /* Replace with your next arrow image path */
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        padding: 0;
+    }
+
+
+</style>
+   </body>
 </html>
