@@ -1,547 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
-   <head>
-      <!-- basic -->
-      <meta charset="utf-8">
-      <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <!-- mobile metas -->
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <meta name="viewport" content="initial-scale=1, maximum-scale=1">
-      <!-- site metas -->
-      <title>Sekata Entrepreneur Consulting</title>
-      <meta name="keywords" content="">
-      <meta name="description" content="">
-      <meta name="author" content="">
-      <!-- bootstrap css -->
-      <link rel="stylesheet" href="css/bootstrap.min.css">
-      <!-- style css -->
-      <link rel="stylesheet" href="css/style.css">
-      <!-- Responsive-->
-      <link rel="stylesheet" href="css/responsive.css">
-      <!-- fevicon -->
-      <link rel="icon" href="zon-html/images/fevicon.png" type="image/gif" />
-      <!-- Scrollbar Custom CSS -->
-      <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
-      <link rel="stylesheet" href="css/owl.carousel.min.css">
-      <!-- Tweaks for older IEs-->
-      <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
-      <link rel="stylesheet" href="https://rawgit.com/LeshikJanz/libraries/master/Bootstrap/baguetteBox.min.css">
-      <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
-   </head>
-   <!-- body -->
-   <body class="main-layout">
-      <!-- loader  -->
-      <div class="loader_bg">
-         <div class="loader"><img src="images/loading.gif" alt="#"/></div>
-      </div>
-      <!-- end loader -->
-      <!-- header -->
-      <div class="header">
-         <div class="container-fluid">
-            <div class="row d_flex">
-               <div class="col-xl-1 col-lg-3 col-sm-2 col logo_section">
-                  <div class="full">
-                     <div class="center-desk">
-                        <div class="logo">
-                        </div>
-                     </div>
-                  </div>
-               </div>
-               <div class="col-xl-7 col-lg-9 col-md-10 col-sm-12">
-                  <nav class="navigation navbar navbar-expand-md navbar-dark ">
-                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
-                     <span class="navbar-toggler-icon"></span>
-                     </button>
-                  </nav>
-               </div>
-               <div class="col-md-4 re_no">
-                  <ul class="infomaco">
-                     <a href="https://wa.me/6287771107292" target="_blank">
-                     <li><i class="fa fa-phone" aria-hidden="true"></i>Telp +62877-7110-7292</li>
-                     </a>
-                     <li><a href="mailto:sekataconsulting7292@gmail.com"><i class="fa fa-envelope-o" aria-hidden="true"></i> sekataconsulting7292@gmail.com</a></li>
-                  </ul>
-               </div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulir Pendaftaran Sekata</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body class="bg-cover bg-center bg-no-repeat flex flex-col justify-center items-center min-h-screen" 
+      style="background-image: url('image/bg.jpg');">
+
+    <div class="card w-full max-w-lg bg-white bg-opacity-80 backdrop-blur-md shadow-lg p-6 rounded-lg">
+
+        <!-- HEADER DENGAN LOGO PERUSAHAAN -->
+        <div class="flex flex-col items-center mb-6">
+            <img src="image/logo.png" alt="Logo Perusahaan" class="w-24 h-24 mb-2">
+            <h2 class="text-2xl font-bold text-center">Formulir Pendaftaran Sekata</h2>
+        </div>
+
+        <form method="POST" action="{{ route('regristration.store') }}" class="space-y-4">
+            @csrf
+            <div>
+                <label for="nama" class="label">Nama Lengkap</label>
+                <input type="text" id="nama" name="nama" class="border-b-2 border-gray-300 w-full focus:outline-none focus:border-blue-500" required>
             </div>
-         </div>
-      </div>
-      <!-- end header inner -->
-      <!-- end header -->
-      <!-- about -->
-      <div class="about">
-         <div class="container">
-            <div class="row d_flex grid">
-               <div class="col-md-6">
-                  <div class="about_img text_align_center">
-                  <figure>
-                     <img src="image/logo.png" alt="#" width="500" height="auto"/>
-                        </figure>
-                  </div>
-               </div>
-               <div class="col-md-6 order1">
-                  <div class="titlepage text_align_left">
-                     <h2>Sekata Entrepreneur Consulting</h2>
-                     <p>Bertumbuh, Berbuah, Berbagi</p>
-                  </div>
-               </div>
+            <div>
+                <label for="jenis_kelamin" class="label">Jenis Kelamin</label>
+                <select id="jenis_kelamin" name="jenis_kelamin" class="border-b-2 border-gray-300 w-full focus:outline-none focus:border-blue-500" required>
+                    <option value="" disabled selected>Pilih jenis kelamin</option>
+                    <option value="Laki-laki">Laki-laki</option>
+                    <option value="Perempuan">Perempuan</option>
+                </select>
             </div>
-         </div>
-      </div>
-      <!-- end about -->
-       <!-- top -->
-       <div class="full_bg">
-         <div class="slider_main">
-            <div class="container-fluid">
-               <div class="row">
-                  <div class="col-md-12">
-                     <!-- carousel code -->
-                     <div id="carouselExampleIndicators" class="carousel slide">
-                        <ol class="carousel-indicators">
-                           <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                           <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                           <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                        </ol>
-                        <div class="carousel-inner">
-                           <!-- first slide -->
-                           <div class="carousel-item active">
-                              <div class="carousel-caption relative">
-                                 <div class="row d_flex">
-                                    <div class="col-md-5">
-                                       <div class="zon_text">
-                                          <h1 data-animation="animated bounceInLeft"style="font-size: 2.5rem;">
-                                             TRAINING CENTER
-                                          </h1>
-                                          <p data-animation="animated bounceInLeft">
-                                             Melayani pelatihan-pelatihan untuk mandiri/perorangan, instansi dan perusahaan dalam bentuk in house training maupun workshop/seminardengan materi TOT untuk instruktur KKNI level 3-6, MSDM, Kewirausahaan,IT dan Administrasi perkantora
-                                          </p>
-                                       </div>
-                                    </div>
-                                    <div class="col-md-7">
-                                       <div class="coff_img">
-                                          <figure><img src="image/marketing.png" alt="#"/></figure>
-                                       </div>
-                                    </div>
-                                 </div>
-                              </div>
-                           </div>
-                           <!-- second slide -->
-                           <div class="carousel-item">
-                              <div class="carousel-caption relative">
-                                 <div class="row d_flex">
-                                    <div class="col-md-5">
-                                       <div class="zon_text">
-                                          <h1 data-animation="animated bounceInLeft"style="font-size: 2.5rem;">
-                                             BNSP SERTIFICATION
-                                          </h1>
-                                          <p data-animation="animated bounceInLeft">
-                                             Melayani sertifikasi kompetensi BNSP sebagai muara dari pelatihan-pelatihan yang diselenggarakan baik untuk perorangan/mandiri, instansimaupun perusahaan
-                                          </p>
-                                       </div>
-                                    </div>
-                                    <div class="col-md-7">
-                                       <div class="coff_img">
-                                          <figure><img src="image/folder_.png" alt="#"/></figure>
-                                       </div>
-                                    </div>
-                                 </div>
-                              </div>
-                           </div>
-                           <!-- third slide-->
-                           <div class="carousel-item">
-                              <div class="carousel-caption relative">
-                                 <div class="row d_flex">
-                                    <div class="col-md-5">
-                                       <div class="zon_text">
-                                          <h1 data-animation="animated bounceInLeft"style="font-size: 2.5rem;">
-                                             COACHING
-                                          </h1>
-                                          <p data-animation="animated bounceInLeft">
-                                             Melayani pendampingan untuk wirausahawan dan UMKM yang barumemulai usaha maupun yang akan meningkatkan dan mengembangkanusahanya, juga coaching untuk perusahaan secara manajemen
-                                          </p>
-                                       </div>
-                                    </div>
-                                    <div class="col-md-7">
-                                       <div class="coff_img">
-                                          <figure><img src="image/kerja.png" alt="#"/></figure>
-                                       </div>
-                                    </div>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                        <!-- controls -->
-                        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                        <i class="fa fa-angle-left" aria-hidden="true"></i>
-                        <span class="sr-only">Previous</span>
-                        </a>
-                        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                        <i class="fa fa-angle-right" aria-hidden="true"></i>
-                        <span class="sr-only">Next</span>
-                        </a>
-                     </div>
-                  </div>
-               </div>
+            <div>
+                <label for="alamat" class="label">Alamat</label>
+                <input type="text" id="alamat" name="alamat" class="border-b-2 border-gray-300 w-full focus:outline-none focus:border-blue-500" required>
             </div>
-         </div>
-      </div>
-      <!-- end banner -->
-      <!-- service -->
-      <div class="service">
-         <div class="container-fluid">
-            <div class="row">
-               <div class="col-md-12">
-                  <div class="titlepage text_align_center">
-                     <h2>Galeri Kegiatan</h2>
-                  </div>
-               </div>
+            <div>
+                <label for="perusahaan" class="label">Nama Instansi/Perusahaan</label>
+                <input type="text" id="perusahaan" name="perusahaan" class="border-b-2 border-gray-300 w-full focus:outline-none focus:border-blue-500" required>
             </div>
-            <div class="row">
-               <div class="col-md-12">
-                  <!--  Demos -->
-                  <div class="owl-carousel owl-theme">
-                     <div class="item">
-                        <div class="service_box text_align_center">
-                           <div class="ser_img">
-                              <figure><img src="image/tot.jpg" alt="#"/></figure>
-                           </div>
-                           <h3></h3>
-                           <p>
-                           </p>
-                        </div>
-                     </div>
-                     <div class="item">
-                        <div class="service_box text_align_center">
-                           <div class="ser_img">
-                              <figure><img src="image/msdm.jpg" alt="#"/></figure>
-                           </div>
-                           <h3></h3>
-                           <p>
-                           </p>
-                        </div>
-                     </div>
-                     <div class="item">
-                        <div class="service_box text_align_center">
-                           <div class="ser_img">
-                              <figure><img src="image/info.jpg" alt="#"/></figure>
-                           </div>
-                           <h3></h3>
-                           <p>
-                           </p>
-                        </div>
-                     </div>
-                     <div class="item">
-                        <div class="service_box text_align_center">
-                           <div class="ser_img">
-                              <figure><img src="image/kewi.jpg" alt="#"/></figure>
-                           </div>
-                           <h3></h3>
-                           <p>
-                           </p>
-                        </div>
-                     </div>
-                  </div>
-               </div>
+            <div>
+                <label for="email" class="label">Email</label>
+                <input type="email" id="email" name="email" class="border-b-2 border-gray-300 w-full focus:outline-none focus:border-blue-500" required>
             </div>
-         </div>
-      </div>
-      <!-- end service -->
-       <!-- galeri -->
-      <div class="service">
-         <div class="container-fluid">
-            <div class="row">
-               <div class="col-md-12">
-                  <div class="titlepage text_align_center">
-                     <h2>Galeri Kegiatan</h2>
-                  </div>
-               </div>
+            <div>
+                <label for="telepon" class="label">No Whatsapp</label>
+                <input type="tel" id="telepon" name="telepon" class="border-b-2 border-gray-300 w-full focus:outline-none focus:border-blue-500" required>
             </div>
-            <div class="row">
-               <div class="col-md-12">
-                  <!--  Demos -->
-                     <div class="item">
-                        <div class="service_box text_align_center">
-                           <div class="ser_img">
-                              <figure><img src="image/poster.jpg" alt="#"/></figure>
-                           </div>
-                        </div>
-                     </div>
-                     <div class="item">
-                        <div class="service_box text_align_center">
-                           <div class="ser_img">
-                              <figure><img src="image/foto2.jpeg" alt="#"/></figure>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               <div class="col-md-12">
-                  <a class="read_more" href="regristration">Daftarkan Disini</a>
-               </div>
-            </div>
-         </div>
-      </div>
-      <!-- end galeri -->
-      <!-- section blue_bg -->
-      <div class="section blue_bg">
-         <div class="container-fluid">
-            <div class="row">
-              <!-- contact -->
-              <div class="col-lg-6 col-md-12">
-                <div class="contact">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="titlepage text_align_center">
-                                <h2>Hubungi Kami</h2>
-                            </div>
-                        </div>
-                        <div class="col-md-12">
-                            <form id="whatsappForm" class="main_form" onsubmit="sendWhatsApp(event)">
-                                <div class="row">
-                                    <div class="col-md-12">
-                                        <input id="name" class="contactus" placeholder="Your name" type="text" name="name">
-                                    </div>
-                                    <div class="col-md-12">
-                                        <input id="phone" class="contactus" placeholder="Phone Number" type="text" name="phone">
-                                    </div>
-                                    <div class="col-md-12">
-                                        <input id="email" class="contactus" placeholder="Email" type="email" name="email">
-                                    </div>
-                                    <div class="col-md-12">
-                                        <textarea id="message" class="textarea" placeholder="Message" name="message"></textarea>
-                                    </div>
-                                    <div class="col-md-12">
-                                        <button type="submit" class="send_btn">Send via WhatsApp</button>
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
+            <div>
+                <label class="label">Skema Kompetensi yang dipilih:</label>
+                <div class="flex flex-col gap-2">
+                    <label class="cursor-pointer flex items-center gap-2">
+                        <input type="checkbox" class="focus:ring-2 focus:ring-blue-500" name="asisteninstruktur" value="asisteninstruktur"> Asisten Instruktur
+                    </label>
+                    <label class="cursor-pointer flex items-center gap-2">
+                        <input type="checkbox" class="focus:ring-2 focus:ring-blue-500" name="instruktur" value="instruktur"> Instruktur
+                    </label>
+                    <label class="cursor-pointer flex items-center gap-2">
+                        <input type="checkbox" class="focus:ring-2 focus:ring-blue-500" name="instruktursenior" value="instruktursenior"> Instruktur Senior
+                    </label>
+                    <label class="cursor-pointer flex items-center gap-2">
+                        <input type="checkbox" class="focus:ring-2 focus:ring-blue-500" name="mastertrainer" value="mastertrainer"> Master Trainer
+                    </label>
                 </div>
             </div>
-           <!-- contact -->
-               <!-- testimonial section -->
-               <div class="col-lg-6 col-md-12">
-                  <div class="testimonial">
-                     <div class="row">
-                        <div class="col-md-12">
-                           <div class="titlepage text_align_left">
-                              <h2>Testimonial</h2>
-                           </div>
-                        </div>
-                     </div>
-                     <div class="row">
-                        <div class="col-md-12">
-                           <div id="myCarousel" class="carousel slide testimonial_Carousel " data-ride="carousel">
-                              <ol class="carousel-indicators">
-                                 <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                                 <li data-target="#myCarousel" data-slide-to="1"></li>
-                                 <li data-target="#myCarousel" data-slide-to="2"></li>
-                              </ol>
-                              <div class="carousel-inner">
-                                 <div class="carousel-item active">
-                                    <div class="container">
-                                       <div class="carousel-caption ">
-                                          <div class="row">
-                                             <div class="col-md-12">
-                                                <div class="testimonial_box text_align_left">
-                                                   <p>uffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going touffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going touffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to</p>
-                                                </div>
-                                             </div>
-                                             <div class="col-md-12">
-                                                <div class="testimonial_pro">
-                                                   <figure><img src="images/test_pro.jpg" alt="#"/></figure>
-                                                   <h3>Mark Jonson <br><span class="cust">Customre</span></h3>
-                                                </div>
-                                             </div>
-                                          </div>
-                                       </div>
-                                    </div>
-                                 </div>
-                                 <div class="carousel-item">
-                                    <div class="container">
-                                       <div class="carousel-caption">
-                                          <div class="row">
-                                             <div class="col-md-12">
-                                                <div class="testimonial_box text_align_left">
-                                                   <p>uffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going touffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going touffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to</p>
-                                                </div>
-                                             </div>
-                                             <div class="col-md-12">
-                                                <div class="testimonial_pro">
-                                                   <figure><img src="images/test_pro.jpg" alt="#"/></figure>
-                                                   <h3>Mark Jonson <br><span class="cust">Customre</span></h3>
-                                                </div>
-                                             </div>
-                                          </div>
-                                       </div>
-                                    </div>
-                                 </div>
-                                 <div class="carousel-item">
-                                    <div class="container">
-                                       <div class="carousel-caption">
-                                          <div class="row">
-                                             <div class="col-md-12">
-                                                <div class="testimonial_box text_align_left">
-                                                   <p>uffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going touffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going touffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to</p>
-                                                </div>
-                                             </div>
-                                             <div class="col-md-12">
-                                                <div class="testimonial_pro">
-                                                   <figure><img src="images/test_pro.jpg" alt="#"/></figure>
-                                                   <h3>Mark Jonson <br><span class="cust">Customre</span></h3>
-                                                </div>
-                                             </div>
-                                          </div>
-                                       </div>
-                                    </div>
-                                 </div>
-                              </div>
-                              <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
-                              <i class="fa fa-angle-left" aria-hidden="true"></i>
-                              <span class="sr-only">Previous</span>
-                              </a>
-                              <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
-                              <i class="fa fa-angle-right" aria-hidden="true"></i>
-                              <span class="sr-only">Next</span>
-                              </a>
-                           </div>
-                        </div>
-                        <div class="col-md-12">
-                           <div class="coff">
-                              <figure><img src="images/coff.png" alt="#"/></figure>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-               <!-- end testimonial section -->
+            <div class="form-control">
+                <label class="cursor-pointer flex items-center gap-2">
+                    <input type="checkbox" class="focus:ring-2 focus:ring-blue-500" name="agree-term" required>
+                    Saya setuju dengan <a href="#" class="text-blue-500 underline">Syarat dan Ketentuan</a>
+                </label>
             </div>
-         </div>
-      </div>
-      <!-- end section blue_bg -->
-      <!--  footer -->
-      <footer>
-         <div class="footer">
-            <div class="container">
-               <div class="row">
-                  <div class="col-md-12">
-                     <a class="logo_bottom" href="welcome.blade.php">Sekata</a>
-                  </div>
-                  <div class="col-md-12">
-                     <form class="form_subscri">
-                        <div class="row">
-                        </div>
-                     </form>
-                  </div>
-                  <div class="col-lg-9 col-md-8">
-
-                        </div>
-                        <div class="col-md-6">
-                           <div class="infoma text_align_left">
-                              <h3>Skema kompetensi</h3>
-                              <ul class="menu_bottom">
-                                 <li><a href="Javascript:void(0)">Asisten Instruktur</a></li>
-                                 <li><a href="Javascript:void(0)">Instruktur</a></li>
-                                 <li><a href="Javascript:void(0)">Instruktur Senior</a></li>
-                                 <li><a href="Javascript:void(0)">Master Trainer</a></li>
-                              </ul>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="col-lg-3 col-md-4">
-                     <div class="infoma text_align_left">
-                        <h3>Follow Us</h3>
-                        <ul class="social_icon">
-                           <li><a href="https://www.facebook.com/profile.php?id=100094426865230&mibextid=ZbWKwL"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                           <li><a href="Javascript:void(0)"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                           <li><a href="Javascript:void(0)"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-                           <li><a href="https://www.instagram.com/sekata_consulting"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-                           <li><a href="Javascript:void(0)"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
-                        </ul>
-                        <ul class="conta">
-                           <li><a href="https://maps.app.goo.gl/BP7S7bYJai81vcon7"><i class="fa fa-map-marker" aria-hidden="true"></i>Lokasi </a></li>
-                           <li><a href="https://wa.me/6287771107292"><i class="fa fa-phone" aria-hidden="true"></i>Telp +62877-7110-7292</a></li>
-                           <li> <i class="fa fa-envelope" aria-hidden="true"></i><a href="sekataconsulting7292@gmail.com"> sekataconsulting7292@gmail.com</a></li>
-                        </ul>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </footer>
-      <!-- end footer -->
-      <!-- Javascript files-->
-      <script src="js/jquery.min.js"></script>
-      <script src="js/bootstrap.bundle.min.js"></script>
-      <script src="js/jquery-3.0.0.min.js"></script>
-      <!-- sidebar -->
-      <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script>
-      <script src="js/owl.carousel.min.js"></script>
-      <script src="js/custom.js"></script>
-      <script>
-        function sendWhatsApp(event) {
-            event.preventDefault();
-
-            var phoneNumber = "6281234567890"; // Ganti dengan nomor WhatsApp tujuan
-            var name = document.getElementById("name").value;
-            var phone = document.getElementById("phone").value;
-            var email = document.getElementById("email").value;
-            var message = document.getElementById("message").value;
-
-            var text = `Halo, saya ${name}.\nNomor HP: ${phone}\nEmail: ${email}\nPesan: ${message}`;
-
-            var whatsappURL = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(text)}`;
-
-            window.open(whatsappURL, "_blank");
-        }
-    </script>
-    <style>
-    .owl-nav button {
-        font-size: 2rem !important; /* Adjust size as needed */
-        width: 50px !important; /* Adjust width as needed */
-        height: 50px !important; /* Adjust height as needed */
-        line-height: 50px !important; /* Center vertically */
-        border-radius: 5px !important; /* Optional: Add rounded corners */
-        background-color: rgb(252, 249, 249) !important; /* Optional: Add a semi-transparent background */
-        color: white !important; /* Optional: Change color */
-        margin: 0 10px !important; /* Optional: Add some margin */
-    }
-
-    .owl-nav button:hover {
-        background-color: rgba(247, 10, 10, 0.96) !important; /* Optional: Change background on hover */
-        color: lightgray !important;
-    }
-
-    .owl-prev span, .owl-next span { /* Target the span inside the button */
-        display: block; /* Make the span take up the full button space */
-    }
-
-    /* Hide the default Owl Carousel navigation text (prev/next) */
-    .owl-prev span, .owl-next span {
-        display: none;
-    }
-
-    /* Use a background image for the arrows */
-    .owl-prev {
-      background-image: url("path/to/prev_arrow.png"); /* Replace with your prev arrow image path */
-      background-size: contain; /* or cover, depending on your image */
-      background-repeat: no-repeat;
-      background-position: center;
-      padding: 0; /* Remove default padding */
-    }
-    .owl-next {
-        background-image: url("path/to/next_arrow.png"); /* Replace with your next arrow image path */
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-position: center;
-        padding: 0;
-    }
-
-
-</style>
-   </body>
+            <button type="submit" class="btn w-full bg-red-500 text-white shadow-lg hover:bg-red-600 hover:shadow-xl transition-shadow duration-300 py-2 px-4 text-sm rounded-lg">Daftar Sekarang</button>
+        </form>
+    </div>
+</body>
 </html>
