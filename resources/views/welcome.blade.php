@@ -494,47 +494,57 @@
     </script>
     <style>
     .owl-nav button {
-        font-size: 2rem !important; /* Adjust size as needed */
-        width: 50px !important; /* Adjust width as needed */
-        height: 50px !important; /* Adjust height as needed */
-        line-height: 50px !important; /* Center vertically */
-        border-radius: 5px !important; /* Optional: Add rounded corners */
-        background-color: rgb(252, 249, 249) !important; /* Optional: Add a semi-transparent background */
-        color: white !important; /* Optional: Change color */
-        margin: 0 10px !important; /* Optional: Add some margin */
+        font-size: 2.5rem !important; 
+        width: 80px !important; /* Perbesar tombol */
+        height: 80px !important; 
+        line-height: 80px !important; 
+        border-radius: 10px !important; 
+        background-color: rgba(252, 249, 249, 0.8) !important; /* Lebih transparan */
+        color: white !important; 
+        margin: 0 15px !important; /* Tambah jarak antar tombol */
+        border: none !important; 
+        display: block !important;
+        transition: all 0.3s ease-in-out !important; /* Animasi smooth */
     }
 
     .owl-nav button:hover {
-        background-color: rgba(247, 10, 10, 0.96) !important; /* Optional: Change background on hover */
+        background-color: rgba(14, 14, 14, 0.96) !important; 
         color: lightgray !important;
+        transform: scale(1.1); /* Perbesar tombol sedikit */
     }
 
-    .owl-prev span, .owl-next span { /* Target the span inside the button */
-        display: block; /* Make the span take up the full button space */
+    .owl-prev, .owl-next {
+        width: 80px !important; /* Perbesar ukuran tombol */
+        height: 80px !important;
+        display: block !important;
+        background-size: cover !important; /* Pastikan gambar mengisi tombol */
+        background-repeat: no-repeat !important;
+        background-position: center !important;
+        padding: 0 !important;
+        border: none !important;
+        outline: none !important;
+        transition: all 0.3s ease-in-out !important; /* Animasi smooth */
     }
 
-    /* Hide the default Owl Carousel navigation text (prev/next) */
-    .owl-prev span, .owl-next span {
-        display: none;
-    }
-
-    /* Use a background image for the arrows */
     .owl-prev {
-      background-image: url("path/to/prev_arrow.png"); /* Replace with your prev arrow image path */
-      background-size: contain; /* or cover, depending on your image */
-      background-repeat: no-repeat;
-      background-position: center;
-      padding: 0; /* Remove default padding */
+        background-image: url("image/tombol.png") !important; 
     }
+
     .owl-next {
-        background-image: url("path/to/next_arrow.png"); /* Replace with your next arrow image path */
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-position: center;
-        padding: 0;
+        background-image: url("image/tombol1.png") !important; 
     }
 
+    /* Hover khusus untuk tombol Next */
+    .owl-next:hover {
+        background-image: url("image/tombol1-hover.png") !important; /* Ganti gambar saat hover */
+        transform: scale(1.1); /* Perbesar sedikit saat hover */
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); /* Efek bayangan */
+    }
 
+    /* Sembunyikan teks default pada tombol */
+    .owl-prev span, .owl-next span {
+        display: none !important;
+    }
 </style>
    </body>
 </html>
