@@ -237,8 +237,12 @@
                <div class="service_box text_align_center">
                   <div class="ser_img">
                      <figure><img src="{{ asset('image/' . $gallery->image) }}" alt="{{ $gallery->title }}"/></figure>
+                     </div>                  
                   </div>
                </div>
+               <div class="col-md-12">
+                  <a class="read_more" href="regristration">Daftarkan Disini</a>
+                     </div>  
             </div>
             @endforeach
       <!-- end galeri -->
