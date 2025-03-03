@@ -3,10 +3,9 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\RegristrationController;
-
-Route::get('/', function () {
-    return view('welcome');
-});
+use App\Http\Controllers\WelcomeController;
+    
+Route::get('/', [WelcomeController::class, 'index'])->name('welcome.index');
 
 Route::get('/dashboard', function () {
     return view('dashboard');

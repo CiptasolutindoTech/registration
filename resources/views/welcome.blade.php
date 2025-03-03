@@ -190,63 +190,34 @@
       <!-- end banner -->
       <!-- service -->
       <div class="service">
-         <div class="container-fluid">
-            <div class="row">
-               <div class="col-md-12">
-                  <div class="titlepage text_align_center">
-                     <h2>Galeri Kegiatan</h2>
-                  </div>
-               </div>
-            </div>
-            <div class="row">
-               <div class="col-md-12">
-                  <!--  Demos -->
-                  <div class="owl-carousel owl-theme">
-                     <div class="item">
-                        <div class="service_box text_align_center">
-                           <div class="ser_img">
-                              <figure><img src="image/tot.jpg" alt="#"/></figure>
-                           </div>
-                           <h3></h3>
-                           <p>
-                           </p>
-                        </div>
-                     </div>
-                     <div class="item">
-                        <div class="service_box text_align_center">
-                           <div class="ser_img">
-                              <figure><img src="image/msdm.jpg" alt="#"/></figure>
-                           </div>
-                           <h3></h3>
-                           <p>
-                           </p>
-                        </div>
-                     </div>
-                     <div class="item">
-                        <div class="service_box text_align_center">
-                           <div class="ser_img">
-                              <figure><img src="image/info.jpg" alt="#"/></figure>
-                           </div>
-                           <h3></h3>
-                           <p>
-                           </p>
-                        </div>
-                     </div>
-                     <div class="item">
-                        <div class="service_box text_align_center">
-                           <div class="ser_img">
-                              <figure><img src="image/kewi.jpg" alt="#"/></figure>
-                           </div>
-                           <h3></h3>
-                           <p>
-                           </p>
-                        </div>
-                     </div>
-                  </div>
-               </div>
+   <div class="container-fluid">
+      <div class="row">
+         <div class="col-md-12">
+            <div class="titlepage text_align_center">
+               <h2>Galeri Kegiatan</h2>
             </div>
          </div>
       </div>
+      <div class="row">
+         <div class="col-md-12">
+            <!-- Demos -->
+            <div class="owl-carousel owl-theme">
+               @foreach ($galleries as $gallery)
+               <div class="item">
+                  <div class="service_box text_align_center">
+                     <div class="ser_img">
+                        <figure><img src="{{ asset('image/' . $gallery->image) }}" alt="{{ $gallery->title }}"/></figure>
+                     </div>
+                     <h3>{{ $gallery->title }}</h3>
+                     <p>{{ $gallery->description }}</p>
+                  </div>
+               </div>
+               @endforeach
+            </div>
+         </div>
+      </div>
+   </div>
+</div>
       <!-- end service -->
        <!-- galeri -->
       <div class="service">
@@ -261,20 +232,15 @@
             <div class="row">
                <div class="col-md-12">
                   <!--  Demos -->
-                     <div class="item">
-                        <div class="service_box text_align_center">
-                           <div class="ser_img">
-                              <figure><img src="image/poster.jpg" alt="#"/></figure>
-                           </div>
-                        </div>
-                     </div>
+                  @foreach ($posters as $gallery)
+            <div class="item">
+               <div class="service_box text_align_center">
+                  <div class="ser_img">
+                     <figure><img src="{{ asset('image/' . $gallery->image) }}" alt="{{ $gallery->title }}"/></figure>
                   </div>
-               <div class="col-md-12">
-                  <a class="read_more" href="regristration">Daftarkan Disini</a>
                </div>
             </div>
-         </div>
-      </div>
+            @endforeach
       <!-- end galeri -->
       <!-- section blue_bg -->
       <div class="section blue_bg">
