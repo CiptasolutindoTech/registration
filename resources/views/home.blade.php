@@ -288,7 +288,7 @@
             </div>
           </div>
 
-          <div class="col-xl-6" data-aos="fade-up" data-aos-delay="300">
+          {{-- <div class="col-xl-6" data-aos="fade-up" data-aos-delay="300">
             <div class="image-wrapper">
               <div class="images position-relative" data-aos="zoom-out" data-aos-delay="400">
                 <img src="{{ asset('') }}iLanding-1.0.0/assets/img/about-5.webp" alt="Business Meeting" class="img-fluid main-image rounded-4">
@@ -299,7 +299,7 @@
                 <p>Of experience in business service</p>
               </div>
             </div>
-          </div>
+          </div> --}}
         </div>
 
       </div>
