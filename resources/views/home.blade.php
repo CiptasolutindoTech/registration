@@ -32,6 +32,96 @@
   {{-- corousel --}}
   <link rel="stylesheet" href="{{ asset('') }}css/owl.carousel.min.css">
 
+  <!-- CSS Styling -->
+<style>
+  /* General Carousel Styling */
+  .carousel-inner {
+    min-height: 300px;
+  }
+
+  .carousel-item {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .carousel-caption {
+    position: relative;
+    padding: 2rem 1rem;
+  }
+
+  /* Batasi lebar carousel caption agar tidak terlalu lebar di desktop */
+  @media (min-width: 992px) {
+    .carousel-caption {
+      max-width: 1140px;
+      margin: 0 auto;
+    }
+
+    .carousel-caption .col-md-7 {
+      padding-left: 2rem;
+    }
+  }
+
+  /* Responsive layout untuk mobile */
+  @media (max-width: 767px) {
+    .carousel-item .row {
+      flex-direction: column-reverse;
+    }
+
+    .carousel-caption img {
+      margin-bottom: 1rem;
+    }
+
+    .zon_text h3 {
+      font-size: 1.5rem;
+    }
+  }
+
+  /* Tombol panah kustom */
+  .carousel-control-prev,
+  .carousel-control-next {
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 50%;
+  }
+
+  .carousel-control-prev {
+    left: -40px;
+  }
+
+  .carousel-control-next {
+    right: -40px;
+  }
+
+  @media (max-width: 768px) {
+    .carousel-control-prev {
+      left: 10px !important;
+    }
+
+    .carousel-control-next {
+      right: 10px !important;
+    }
+  }
+
+  /* Typography */
+  .zon_text h3 {
+    font-size: 2rem;
+    color: #333;
+  }
+
+  .zon_text p {
+    font-size: 1rem;
+    color: #555;
+  }
+</style>
+
+
   <!-- =======================================================
   * Template Name: iLanding
   * Template URL: https://bootstrapmade.com/ilanding-bootstrap-landing-page-template/
@@ -63,7 +153,7 @@
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
 
-      <a class="btn-getstarted" href="index.html#about">Get Started</a>
+      <a class="btn-getstarted" href="/regristration">Daftar</a>
 
     </div>
   </header>
@@ -94,7 +184,7 @@
               </p>
 
               <div class="hero-buttons">
-                <a href="#about" class="btn btn-primary me-0 me-sm-2 mx-1">Get Started</a>
+                <a href="/regristration" class="btn btn-primary me-0 me-sm-2 mx-1">Daftar</a>
                 {{-- <a href="https://www.youtube.com/watch?v=Y7f98aduVJ8" class="btn btn-link mt-2 mt-sm-0 glightbox">
                   <i class="bi bi-play-circle me-1"></i>
                   Play Video
@@ -122,51 +212,37 @@
           </div>
         </div>
 
-        <div class="row stats-row gy-4 mt-5" data-aos="fade-up" data-aos-delay="500">
-          <div class="col-lg-3 col-md-6">
-            <div class="stat-item">
-              <div class="stat-icon">
-                <i class="bi bi-trophy"></i>
-              </div>
-              <div class="stat-content">
-                <h4>3x Won Awards</h4>
-                <p class="mb-0">Vestibulum ante ipsum</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6">
-            <div class="stat-item">
-              <div class="stat-icon">
-                <i class="bi bi-briefcase"></i>
-              </div>
-              <div class="stat-content">
-                <h4>6.5k Faucibus</h4>
-                <p class="mb-0">Nullam quis ante</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6">
-            <div class="stat-item">
-              <div class="stat-icon">
-                <i class="bi bi-graph-up"></i>
-              </div>
-              <div class="stat-content">
-                <h4>80k Mauris</h4>
-                <p class="mb-0">Etiam sit amet orci</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6">
-            <div class="stat-item">
-              <div class="stat-icon">
+        <div class="row stats-row gy-4 mt-5 justify-content-center" data-aos="fade-up" data-aos-delay="500">
+        <div class="col-lg-4 col-md-6">
+            <div class="stat-item text-center">
+            <div class="stat-icon mb-2">
                 <i class="bi bi-award"></i>
-              </div>
-              <div class="stat-content">
-                <h4>6x Phasellus</h4>
-                <p class="mb-0">Vestibulum ante ipsum</p>
-              </div>
             </div>
-          </div>
+            <div class="stat-content">
+                <h4>BNSP Certification</h4>
+            </div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+            <div class="stat-item text-center">
+            <div class="stat-icon mb-2">
+                <i class="bi bi-sunrise"></i>
+            </div>
+            <div class="stat-content">
+                <h4>Training Center</h4>
+            </div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+            <div class="stat-item text-center">
+            <div class="stat-icon mb-2">
+                <i class="bi bi-shield-check"></i>
+            </div>
+            <div class="stat-content">
+                <h4>Coaching & Pendampingan</h4>
+            </div>
+            </div>
+        </div>
         </div>
 
       </div>
@@ -181,44 +257,30 @@
         <div class="row gy-4 align-items-center justify-content-between">
 
           <div class="col-xl-5" data-aos="fade-up" data-aos-delay="200">
-            <span class="about-meta">MORE ABOUT US</span>
-            <h2 class="about-title">Voluptas enim suscipit temporibus</h2>
-            <p class="about-description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+            <span class="about-meta">Tentang Sekata</span>
+            <h2 class="about-title">Fokus Pengembangan Sumber Daya Manusia.</h2>
+            <p class="about-description">Sekata Entrepreneur Consulting adalah Lembaga Pelatihan, Sertifikasi,
+            Konsultasi dan Pendampingan yang Berfokus Pada Pengembangan Sumber
+            Daya Manusia, UMKM dan Administrasi Perkantoran.</p>
 
             <div class="row feature-list-wrapper">
               <div class="col-md-6">
                 <ul class="feature-list">
-                  <li><i class="bi bi-check-circle-fill"></i> Lorem ipsum dolor sit amet</li>
-                  <li><i class="bi bi-check-circle-fill"></i> Consectetur adipiscing elit</li>
-                  <li><i class="bi bi-check-circle-fill"></i> Sed do eiusmod tempor</li>
-                </ul>
-              </div>
-              <div class="col-md-6">
-                <ul class="feature-list">
-                  <li><i class="bi bi-check-circle-fill"></i> Incididunt ut labore et</li>
-                  <li><i class="bi bi-check-circle-fill"></i> Dolore magna aliqua</li>
-                  <li><i class="bi bi-check-circle-fill"></i> Ut enim ad minim veniam</li>
+                  <li><i class="bi bi-check-circle-fill"></i> Pelatihan/Training</li>
+                  <li><i class="bi bi-check-circle-fill"></i> Pendampingan usaha dan coaching</li>
+                  <li><i class="bi bi-check-circle-fill"></i> Sertifikasi kompetensi</li>
                 </ul>
               </div>
             </div>
 
             <div class="info-wrapper">
               <div class="row gy-4">
-                <div class="col-lg-5">
-                  <div class="profile d-flex align-items-center gap-3">
-                    <img src="{{ asset('') }}iLanding-1.0.0/assets/img/avatar-1.webp" alt="CEO Profile" class="profile-image">
-                    <div>
-                      <h4 class="profile-name">Mario Smith</h4>
-                      <p class="profile-position">CEO &amp; Founder</p>
-                    </div>
-                  </div>
-                </div>
                 <div class="col-lg-7">
                   <div class="contact-info d-flex align-items-center gap-2">
                     <i class="bi bi-telephone-fill"></i>
                     <div>
                       <p class="contact-label">Call us anytime</p>
-                      <p class="contact-number">+123 456-789</p>
+                      <p class="contact-number">+62877-7110-7292</p>
                     </div>
                   </div>
                 </div>
@@ -245,107 +307,112 @@
     </section><!-- /About Section -->
 
     <!-- Features Section -->
-    <section id="features" class="features section">
-    <div class="container section-title" data-aos="fade-up">
+    <section id="features" class="features section py-5 bg-light">
+    <div class="container section-title text-center mb-4" data-aos="fade-up">
         <h2>Features</h2>
-        <p>Berikut adalah layanan unggulan yang kami.</p>
+        <p>Berikut adalah layanan unggulan yang kami tawarkan.</p>
     </div>
 
     <div class="container">
-        <div id="featuresCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="5000">
+        <div class="row">
+        <div class="col-12">
+            <div id="carouselFeaturesSekata" class="carousel slide" data-bs-ride="carousel">
 
-        <!-- Dots indicators -->
-        <div class="carousel-indicators">
-            @foreach ($galleries as $index => $gallery)
-            <button type="button" data-bs-target="#featuresCarousel" data-bs-slide-to="{{ $index }}" class="@if($index === 0) active @endif" aria-current="@if($index === 0) true @endif" aria-label="Slide {{ $index + 1 }}"></button>
-            @endforeach
-        </div>
-
-        <div class="carousel-inner">
-            @foreach ($galleries as $index => $gallery)
-            <div class="carousel-item @if($index === 0) active @endif">
-            <div class="row align-items-center">
-                <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0 d-flex flex-column justify-content-center">
-                <h3>{{ $gallery->title }}</h3>
-                <p class="fst-italic">{!! nl2br(e($gallery->description)) !!}</p>
-                </div>
-                <div class="col-lg-6 order-1 order-lg-2 text-center">
-                <img src="{{ asset('image/' . $gallery->image) }}" class="img-fluid" alt="{{ $gallery->title }}">
-                </div>
+            <!-- Indicators -->
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselFeaturesSekata" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselFeaturesSekata" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselFeaturesSekata" data-bs-slide-to="2" aria-label="Slide 3"></button>
             </div>
-            </div>
-            @endforeach
-        </div>
 
-        <!-- Prev/Next -->
-        <button class="carousel-control-prev" type="button" data-bs-target="#featuresCarousel" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#featuresCarousel" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </button>
+            <!-- Slides -->
+            <div class="carousel-inner">
+
+                <!-- Slide 1 -->
+                <div class="carousel-item active">
+                <div class="carousel-caption d-block text-start">
+                    <div class="row align-items-center">
+                    <div class="col-md-5">
+                        <div class="zon_text">
+                        <h3 class="fw-bold mb-3">TRAINING CENTER</h3>
+                        <p>
+                            Melayani pelatihan-pelatihan untuk mandiri/perorangan, instansi dan perusahaan dalam bentuk in house training maupun workshop/seminar dengan materi TOT untuk instruktur KKNI level 3-6, MSDM, Kewirausahaan, IT dan Administrasi perkantoran.
+                        </p>
+                        </div>
+                    </div>
+                    <div class="col-md-7 text-center">
+                        <img src="{{ asset('') }}image/marketing.png" class="img-fluid rounded" alt="Training Center">
+                    </div>
+                    </div>
+                </div>
+                </div>
+
+                <!-- Slide 2 -->
+                <div class="carousel-item">
+                <div class="carousel-caption d-block text-start">
+                    <div class="row align-items-center">
+                    <div class="col-md-5">
+                        <div class="zon_text">
+                        <h3 class="fw-bold mb-3">BNSP CERTIFICATION</h3>
+                        <p>
+                            Melayani sertifikasi kompetensi BNSP sebagai muara dari pelatihan-pelatihan yang diselenggarakan baik untuk perorangan/mandiri, instansi maupun perusahaan.
+                        </p>
+                        </div>
+                    </div>
+                    <div class="col-md-7 text-center">
+                        <img src="{{ asset('') }}image/folder_.png" class="img-fluid rounded" alt="BNSP Sertifikasi">
+                    </div>
+                    </div>
+                </div>
+                </div>
+
+                <!-- Slide 3 -->
+                <div class="carousel-item">
+                <div class="carousel-caption d-block text-start">
+                    <div class="row align-items-center">
+                    <div class="col-md-5">
+                        <div class="zon_text">
+                        <h3 class="fw-bold mb-3">COACHING</h3>
+                        <p>
+                            Melayani pendampingan untuk wirausahawan dan UMKM yang baru memulai usaha maupun yang akan meningkatkan dan mengembangkan usahanya, juga coaching untuk perusahaan secara manajemen.
+                        </p>
+                        </div>
+                    </div>
+                    <div class="col-md-7 text-center">
+                        <img src="{{ asset('') }}image/kerja.png" class="img-fluid rounded" alt="Coaching">
+                    </div>
+                    </div>
+                </div>
+                </div>
+
+            </div>
+
+            <!-- Controls -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselFeaturesSekata" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselFeaturesSekata" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+
+            </div>
+        </div>
         </div>
     </div>
     </section>
 
-    <!-- Features Cards Section -->
-    <section id="features-cards" class="features-cards section">
-
-      <div class="container">
-
-        <div class="row gy-4">
-
-          <div class="col-xl-3 col-md-6" data-aos="zoom-in" data-aos-delay="100">
-            <div class="feature-box orange">
-              <i class="bi bi-award"></i>
-              <h4>Corporis voluptates</h4>
-              <p>Consequuntur sunt aut quasi enim aliquam quae harum pariatur laboris nisi ut aliquip</p>
-            </div>
-          </div><!-- End Feature Borx-->
-
-          <div class="col-xl-3 col-md-6" data-aos="zoom-in" data-aos-delay="200">
-            <div class="feature-box blue">
-              <i class="bi bi-patch-check"></i>
-              <h4>Explicabo consectetur</h4>
-              <p>Est autem dicta beatae suscipit. Sint veritatis et sit quasi ab aut inventore</p>
-            </div>
-          </div><!-- End Feature Borx-->
-
-          <div class="col-xl-3 col-md-6" data-aos="zoom-in" data-aos-delay="300">
-            <div class="feature-box green">
-              <i class="bi bi-sunrise"></i>
-              <h4>Ullamco laboris</h4>
-              <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt</p>
-            </div>
-          </div><!-- End Feature Borx-->
-
-          <div class="col-xl-3 col-md-6" data-aos="zoom-in" data-aos-delay="400">
-            <div class="feature-box red">
-              <i class="bi bi-shield-check"></i>
-              <h4>Labore consequatur</h4>
-              <p>Aut suscipit aut cum nemo deleniti aut omnis. Doloribus ut maiores omnis facere</p>
-            </div>
-          </div><!-- End Feature Borx-->
-
-        </div>
-
-      </div>
-
-    </section><!-- /Features Cards Section -->
-
-
     <!-- Call To Action Section -->
-    <section id="call-to-action" class="call-to-action section">
+    <section id="call-to-action
+    " class="call-to-action section">
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
 
         <div class="row content justify-content-center align-items-center position-relative">
           <div class="col-lg-8 mx-auto text-center">
-            <h2 class="display-4 mb-4">Maecenas tempus tellus eget condimentum</h2>
-            <p class="mb-4">Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel</p>
-            <a href="#" class="btn btn-cta">Call To Action</a>
+            <h2 class="display-4 mb-4">Tertarik? Segera Hubungi Kami Ada Penawaran Menarik</h2>
+            <a href="#contact" class="btn btn-cta">Hubungi Sekarang</a>
           </div>
 
           <!-- Abstract Background Elements -->
@@ -392,7 +459,7 @@
     </section><!-- /Call To Action Section -->
 
     <!-- Clients Section -->
-    <section id="clients" class="clients section">
+    {{-- <section id="clients" class="clients section">
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
 
@@ -445,10 +512,10 @@
 
       </div>
 
-    </section><!-- /Clients Section -->
+    </section><!-- /Clients Section --> --}}
 
     <!-- Testimonials Section -->
-    <section id="testimonials" class="testimonials section light-background">
+    {{-- <section id="testimonials" class="testimonials section light-background">
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
@@ -528,57 +595,67 @@
 
       </div>
 
-    </section><!-- /Testimonials Section -->
-
-    <!-- Stats Section -->
-    <section id="stats" class="stats section">
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="row gy-4">
-
-          <div class="col-lg-3 col-md-6">
-            <div class="stats-item text-center w-100 h-100">
-              <span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="1" class="purecounter"></span>
-              <p>Clients</p>
-            </div>
-          </div><!-- End Stats Item -->
-
-          <div class="col-lg-3 col-md-6">
-            <div class="stats-item text-center w-100 h-100">
-              <span data-purecounter-start="0" data-purecounter-end="521" data-purecounter-duration="1" class="purecounter"></span>
-              <p>Projects</p>
-            </div>
-          </div><!-- End Stats Item -->
-
-          <div class="col-lg-3 col-md-6">
-            <div class="stats-item text-center w-100 h-100">
-              <span data-purecounter-start="0" data-purecounter-end="1453" data-purecounter-duration="1" class="purecounter"></span>
-              <p>Hours Of Support</p>
-            </div>
-          </div><!-- End Stats Item -->
-
-          <div class="col-lg-3 col-md-6">
-            <div class="stats-item text-center w-100 h-100">
-              <span data-purecounter-start="0" data-purecounter-end="32" data-purecounter-duration="1" class="purecounter"></span>
-              <p>Workers</p>
-            </div>
-          </div><!-- End Stats Item -->
-
-        </div>
-
-      </div>
-
-    </section><!-- /Stats Section -->
+    </section><!-- /Testimonials Section --> --}}
 
     <!-- Services Section -->
-    <section id="services" class="services section light-background">
-
-    <!-- Section Title -->
-    <div class="container section-title" data-aos="fade-up">
+    <section id="services" class="features section py-5">
+    <div class="container section-title text-center mb-4" data-aos="fade-up">
         <h2>Gallery</h2>
-        <p>Gallery kami.</p>
+        <p>Berikut adalah gallery kami.</p>
     </div>
+
+    <div class="container position-relative">
+        <div id="featuresCarousel" class="carousel slide carousel-fade position-relative" data-bs-ride="carousel" data-bs-interval="5000">
+
+        <!-- Dots Indicators -->
+        <div class="carousel-indicators">
+            @foreach ($galleries as $index => $gallery)
+            <button type="button" data-bs-target="#featuresCarousel" data-bs-slide-to="{{ $index }}"
+            class="{{ $index === 0 ? 'active' : '' }}"
+            aria-current="{{ $index === 0 ? 'true' : 'false' }}"
+            aria-label="Slide {{ $index + 1 }}"></button>
+            @endforeach
+        </div>
+
+        <!-- Carousel Items -->
+        <div class="carousel-inner">
+            @foreach ($galleries as $index => $gallery)
+            <div class="carousel-item {{ $index === 0 ? 'active' : '' }}">
+            <div class="row align-items-center gx-5 gy-4 px-3">
+                <!-- Text -->
+                <div class="col-lg-6 order-2 order-lg-1">
+                <div class="text-start">
+                    <h3 class="fw-bold mb-3">{{ $gallery->title }}</h3>
+                    <p class="fst-italic text-muted">{!! nl2br(e($gallery->description)) !!}</p>
+                </div>
+                </div>
+
+                <!-- Image -->
+                <div class="col-lg-6 order-1 order-lg-2 text-center">
+                <img src="{{ asset('image/' . $gallery->image) }}"
+                    alt="{{ $gallery->title }}"
+                    class="img-fluid rounded shadow"
+                    style="max-height: 420px; object-fit: contain;">
+                </div>
+            </div>
+            </div>
+            @endforeach
+        </div>
+
+        <!-- Controls -->
+        <button class="carousel-control-prev custom-carousel-btn" type="button" data-bs-target="#featuresCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+
+        <button class="carousel-control-next custom-carousel-btn" type="button" data-bs-target="#featuresCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+
+        </div>
+    </div>
+    </section>
 
     <div class="container-fluid">
         <div class="row justify-content-center">
@@ -602,7 +679,7 @@
     <!-- /Services Section -->
 
     <!-- Faq Section -->
-    <section class="faq-9 faq section light-background" id="faq">
+    {{-- <section class="faq-9 faq section light-background" id="faq">
 
       <div class="container">
         <div class="row">
@@ -673,24 +750,7 @@
 
         </div>
       </div>
-    </section><!-- /Faq Section -->
-
-    <!-- Call To Action 2 Section -->
-    <section id="call-to-action-2" class="call-to-action-2 section dark-background">
-
-      <div class="container">
-        <div class="row justify-content-center" data-aos="zoom-in" data-aos-delay="100">
-          <div class="col-xl-10">
-            <div class="text-center">
-              <h3>Call To Action</h3>
-              <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-              <a class="cta-btn" href="#">Call To Action</a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-    </section><!-- /Call To Action 2 Section -->
+    </section><!-- /Faq Section --> --}}
 
     <!-- Contact Section -->
     <section id="contact" class="contact section light-background">
@@ -698,7 +758,6 @@
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Contact</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
       </div><!-- End Section Title -->
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
@@ -707,7 +766,7 @@
           <div class="col-lg-5">
             <div class="info-box" data-aos="fade-up" data-aos-delay="200">
               <h3>Contact Info</h3>
-              <p>Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Vestibulum ante ipsum primis.</p>
+              <p>Terima kasih atas minat Anda pada SAKATA CONSULTING Untuk mempelajari lebih lanjut tentang layanan yang kami tawarkan, silakan isi formulir kosong, tim kami akan menghubungi Anda secara langsung. Kunjungi halaman hubungi kami kapan saja. Kami akan membantu Anda dengan senang hati.</p>
 
               <div class="info-item" data-aos="fade-up" data-aos-delay="300">
                 <div class="icon-box">
@@ -745,7 +804,6 @@
           <div class="col-lg-7">
             <div class="contact-form" data-aos="fade-up" data-aos-delay="300">
               <h3>Get In Touch</h3>
-              <p>Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Vestibulum ante ipsum primis.</p>
 
               <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
                 <div class="row gy-4">
