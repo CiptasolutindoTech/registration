@@ -236,11 +236,11 @@
             <div class="item">
                <div class="service_box text_align_center">
                   <div class="ser_img">
-                     <figure><img src="{{ asset('image/' . $gallery->image) }}" alt="{{ $gallery->title }}"/></figure>                 
+                     <figure><img src="{{ asset('image/' . $gallery->image) }}" alt="{{ $gallery->title }}"/></figure>
                   </div>
                   <div class="col-md-12">
                   <a class="read_more" href="regristration">Daftarkan Sekarang</a>
-               </div>                
+               </div>
                </div>
             </div>
             @endforeach
@@ -367,21 +367,21 @@
     </script>
     <style>
     .owl-nav button {
-        font-size: 2.5rem !important; 
+        font-size: 2.5rem !important;
         width: 80px !important; /* Perbesar tombol */
-        height: 80px !important; 
-        line-height: 80px !important; 
-        border-radius: 10px !important; 
+        height: 80px !important;
+        line-height: 80px !important;
+        border-radius: 10px !important;
         background-color: rgba(252, 249, 249, 0.8) !important; /* Lebih transparan */
-        color: white !important; 
+        color: white !important;
         margin: 0 15px !important; /* Tambah jarak antar tombol */
-        border: none !important; 
+        border: none !important;
         display: block !important;
         transition: all 0.3s ease-in-out !important; /* Animasi smooth */
     }
 
     .owl-nav button:hover {
-        background-color: rgba(14, 14, 14, 0.96) !important; 
+        background-color: rgba(14, 14, 14, 0.96) !important;
         color: lightgray !important;
         transform: scale(1.1); /* Perbesar tombol sedikit */
     }
@@ -400,11 +400,11 @@
     }
 
     .owl-prev {
-        background-image: url("image/tombol.png") !important; 
+        background-image: url("image/tombol.png") !important;
     }
 
     .owl-next {
-        background-image: url("image/tombol1.png") !important; 
+        background-image: url("image/tombol1.png") !important;
     }
 
     /* Hover khusus untuk tombol Next */
