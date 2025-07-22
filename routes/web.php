@@ -6,8 +6,8 @@ use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\WelcomeController;
 use App\Http\Controllers\RegristrationController;
 
-Route::get('/', [WelcomeController::class, 'index'])->name('welcome.index');
-// Route::get('/', [HomeController::class, 'index'])->name('home.index');
+// Route::get('/', [WelcomeController::class, 'index'])->name('welcome.index');
+Route::get('/', [HomeController::class, 'index'])->name('home.index');
 Route::get('/home', [HomeController::class, 'index'])->name('home.index');
 
 Route::get('/dashboard', function () {
